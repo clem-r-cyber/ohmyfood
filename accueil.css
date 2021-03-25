@@ -1,10 +1,236 @@
+html{
+  margin-top: -8px;
+  margin-left: -8px;
+}
+
+/*header*/
+
 header {
+  margin: 0px;
+  background: turquoise;
   width: 375px;
   height: auto;
 }
 
 .logo-chaine {
-  background: rebeccapurple;
-  height: 30px;
-  width: 30px;
+  justify-content: center;
+  margin: 31px 0px 5px 115px;
+  text-align: center;
+  width: 160px;
 }
+
+
+.maps-position{
+  background: #f9f9f9;
+  display: flex;
+}
+
+.logo-position-maps{
+  display: block;
+  width: 30px;
+  height: 20px;
+}
+
+.bloc-maps-logo{
+  width: 375px;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  display: flex;
+}
+
+.text-maps{
+  text-align: center;
+  display: flex;
+}
+
+.bloc-reserve-et-bouton{
+  align-items: center;
+  background: chocolate;
+  display: inline-block;
+}
+
+.h1-reserver{
+  margin-bottom: 10px;
+  margin-left: 35px;
+width: 300px;
+  text-align: center;
+  align-items: center;
+}
+
+.p-h1{
+  font-size: 20px;
+  align-items: center;
+  text-align: center;
+}
+
+.bouton-explorer{
+  margin-bottom: 50px;
+  text-align: center;
+}
+button{
+  background: red;
+  border: 2px;
+  border-radius: 35px;
+  height: 50px;
+  width: 250px;
+}
+
+.p-button-explorer{
+  color: white;
+  margin: 0px;
+  font-size: 20px;
+  text-align: center;
+}
+
+.ensemble-nav{
+  height: 350px;
+  background: rosybrown;
+}
+/* navigation phone*/
+
+.menu-nav-phone{
+    margin-left: 12px;
+    margin-top: 40px;
+    margin-bottom: 10px;
+    padding-top: 0px;
+  align-items: center;
+  border-radius: 15px;
+  width: 350px;
+  background: chartreuse;
+ 
+  
+}
+.nav-phone{
+margin-left: 15px;
+  font-size: 20px;
+  text-align: center;
+  align-items: center;
+  display: flex;
+}
+
+
+.numero-1 {
+  margin-left: -26px;
+}
+
+
+
+.portable {
+  margin-left: 25px;
+}
+
+
+
+.p-portable {
+  margin-left: 29px;
+}
+
+/* navigation composer votre menu*/
+
+.menu-nav-deroule{
+  margin-left: 12px;
+  margin-top: 40px;
+  margin-bottom: 10px;
+  padding-top: 0px;
+align-items: center;
+border-radius: 15px;
+width: 350px;
+background: chartreuse;
+
+}
+
+.nav-deroule{
+  margin-left: 15px;
+  font-size: 20px;
+  text-align: center;
+  align-items: center;
+  display: flex;
+}
+.numero-2{
+margin-left: -26px;
+}
+
+.menu-deroule{
+margin-left: 20px;
+}
+
+.p-composez{
+margin-left: 20px;
+}
+
+/* navigation degustez*/
+
+.menu-nav-boutique{
+  margin-left: 12px;
+  margin-top: 40px;
+  margin-bottom: 10px;
+  padding-top: 0px;
+align-items: center;
+border-radius: 15px;
+width: 350px;
+background: chartreuse;
+}
+.nav-boutique{
+  margin-left: 15px;
+  font-size: 20px;
+  text-align: center;
+  align-items: center;
+  display: flex;
+}
+.numero-3{
+  margin-left: -26px;
+}
+
+.boutique{
+  margin-left: 20px;
+}
+.p-boutique{
+  margin-left: 20px;
+}
+
+/*section restauration*/
+
+.bloc-restauration{
+  display: flex;
+  flex-direction: column;
+  width: 375px;
+  background: blue;
+}
+
+.h1-restaurant{
+  margin-top: 0px;
+  padding-top: 40px;
+  margin-left: 15px;
+  margin-bottom: 0px;
+}
+
+/* Restaurant*/
+
+/* LA PALETTE DU GOUT*/
+
+.div-la-palette-du-gout{
+  margin-left: 22px;
+  background: white;
+  border-radius: 15px;
+  height: 330px;
+  width: 330px;
+}
+
+.icone-nouveau{
+  position: sticky;
+  flex: 1;
+  color: green;
+  background-color: greenyellow;
+  width: 70px;
+  text-align: center;
+}
+
+
+.la-palette-du-gout{
+  flex: 2;
+  border-radius: 15px 15px 0px 0px;
+  margin-top: -35px;
+
+}
+
