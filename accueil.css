@@ -1,0 +1,10 @@
+header {
+  width: 375px;
+  height: auto;
+}
+
+.logo-chaine {
+  background: rebeccapurple;
+  height: 30px;
+  width: 30px;
+}
