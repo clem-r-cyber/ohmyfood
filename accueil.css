@@ -150,11 +150,15 @@ button:hover {
   margin-left: 25px;
 }
 
-/*.portable-1 {
-  visibility: hidden;
+.portable-1{
+  display: none;
+}
+
+.menu-nav-phone:hover .portable-1 {
+  display: inline;
   margin-left: -16px;
   height: 20px;
-}*/
+}
 
 .p-portable {
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
