@@ -1,6 +1,9 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
+  <link rel="stylesheet" href="alafrancaise.css">
+  <link rel="preconnect" href="https://fonts.gstatic.com"> 
+<link href="https://fonts.googleapis.com/css2?family=Shrikhand&display=swap" rel="stylesheet">
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,40 +13,42 @@
   <header>
     <div>
      <button>
-       <img src="images/logo/arrow-left-solid.svg" alt="fleche">
+       <img class="fleche-retour" src="images/logo/arrow-left-solid.png" height="15px" alt="fleche">
      </button>
-       <img class="logo-chaine" src="images/logo/ohmyfood.png" alt="logo de la chaine">
+       <img class="logo-chaine-1" src="images/logo/ohmyfood.png" alt="logo de la chaine">
    </div>
-   <img src="images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg" height="250px" alt="photo-plat-restaurant">
   </header>
+  <img class="photo-plat-restaurant" src="images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg" height="252px" alt="photo-plat-restaurant">
+<article id="ensemble-du-menu">
   <section class="section-entrees">
-       <div>
-         <h1>A la francaise</h1><img src="images/logo/coeur.png" alt="coeur"> 
+       <div class="titre-h1">
+         <h1>A la francaise</h1>
+         <img class="logo-coeur-titre" src="images/logo/coeur.png" height="20px" alt="coeur"> 
        </div>
          <h3>ENTREES</h3>
        </div>
        <div class="bloc-des-entrees">
-        <div class="tartare-de-poulpe">
-         <p><b>Tartare de poulpe acidule</b><br>
-        Aux zests d'orange</p><p><b>25$</b></p>
-        <span>
+        <div class="div-tartare-de-poulpe">
+         <div class="tartare-de-poulpe"><p><b>Tartare de poulpe acidule</b><br>
+        Aux zests d'orange</p><p><b>25$</b></p></div>
+        <span class="bouton-validation">
          <button>
-          <img src="images/logo/check-circle-regular.svg" alt="validation">
+          <img src="images/logo/check-circle-regular.png" height="15px" alt="validation">
          </button> 
         </span>
         </div>
-        <div class="veloute-de-legumes">
-          <p><b>Veloute de legumes d'antan</b><br>
-          Carotte, panais, topinambour</p><p><b>35$</b></p>
+        <div class="div-veloute-de-legumes">
+          <div class="veloute-de-legumes"><p><b>Veloute de legumes d'antan</b><br>
+          Carotte, panais, topinambour</p><p><b>35$</b></p></div>
           <span>
             <button>
               <img src="images/logo/check-circle-regular.svg" alt="validation">
             </button>
           </span>
         </div>
-        <div class="soupe-a-l'oignon">
-          <p><b>Soupe a l'oignon</b><br>
-          Revisitee</p><p><b>20$</b></p>
+        <div class="div-soupe-a-l'oignon">
+          <div class="soupe-a-l'oignon"><p><b>Soupe a l'oignon</b><br>
+          Revisitee</p><p><b>20$</b></p></div>
           <span>
             <button>
               <img src="images/logo/check-circle-regular.svg" alt="validation">
@@ -55,7 +60,92 @@
      </div>
 
   </section>
-  
+  <section class="section-plat">
+    <div>
+      <h3>PLATS</h3>
+    </div>
+    <div class="div-coquilles-saint-jacques">
+      <div class="coquilles-saint-jacques"><p><b>Coquilles Saint-Jacques</b><br>
+      Accompagnees d'une puree de panais</p><p><b>40$</b></p></div>
+      <span>
+        <button>
+          <img src="images/logo/check-circle-regular.svg" alt="validation">
+        </button>
+      </span>
+    </div>
+    <div class="div-magret-de-canard">
+      <div class="magret-de-canard"><p><b>Magret de Canard</b><br>
+      Et parmentier de pommes de terres</p><p><b>35$</b></p></div>
+      <span>
+        <button>
+          <img src="images/logo/check-circle-regular.svg" alt="validation">
+        </button>
+      </span>
+    </div>
+    <div class="div-pigeonneau-d'illes-et-vilaine">
+      <div class="pigeonneau-d'illes-et-vilaine"><p><b>Pigeonneau d'Illes-et-Vilaine</b><br>
+      Sur son lit de gnocchis aux legumes</p><p><b>44$</b></p></div>
+      <span>
+        <button>
+          <img src="images/logo/check-circle-regular.svg" alt="validation">
+        </button>
+      </span>
+    </div>
+  </section>
+
+  <section class="dessert">
+    <div>
+     <h3>DESSERTS</h3>
+    </div> 
+    <div class="div-petales-de-violettes-glaces">
+      <div class="petales-de-violettes-glaces"><p><b>Petales de violettes glaces</b><br>
+      Et puree de noisettes</p><p><b>18$</b></p></div>
+      <span>
+        <button>
+          <img src="images/logo/check-circle-regular.svg" alt="validation">
+        </button>
+      </span>
+    </div>  
+    <div class="div-Fondant-au-chocolat">
+      <div class="Fondant-au-chocolat"><p><b>Fondant au chocolat</b><br>
+      Revisite</p><p><b>22$</b></p></div>
+      <span>
+        <button>
+          <img src="images/logo/check-circle-regular.svg" alt="validation">
+        </button>
+      </span>
+    </div>
+    <div class="div-millefeuille-croustillant">
+      <div class="millefeuille-croustillant">
+        <p><b>Millefeuille croustillant</b><br>
+        Myrtilles et pate d'amande</p><p><b>23$</b></p>
+      </div>
+    </div>
+
+  </section>
+  <div class="bouton-commander">
+    <div class="commander">
+      <p><b>Commander</b></p>
+    </div>
+  </div>
+</article>
+  <footer>
+    <div class="div-footer">
+      <p class="logo-de-la-chaine-footer">ohmyfood</p>
+      <div class="div-footer-p">
+        <div class="bloc-footer-image-1">
+         <img class="couvert-footer" src="images/logo/couvert.svg" alt="couvert" width="10px" height="10px">
+         <p class="p-couvert">Proposer un restaurant</p>
+        </div>
+        <div class="bloc-footer-image-2">
+         <img src="images/logo/poignet de mains.svg" alt="poignet de mains" width="10px" height="10px">
+         <p class="p-poignet-de-mains">Devenir partenaire</p>
+        </div>
+        <p class="mention"> Mention legales</p>
+        <p class="contact">Contact</p>
+      </div>
+    </div>
+  </footer>
   
 </body>
 </html>

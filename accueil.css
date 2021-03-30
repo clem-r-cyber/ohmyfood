@@ -150,7 +150,7 @@ button:hover {
   margin-left: 25px;
 }
 
-.portable-1{
+.portable-1 {
   display: none;
 }
 
@@ -202,6 +202,14 @@ button:hover {
   margin-left: 15px;
 }
 
+.menu-deroule-1{
+  display: none;
+  margin-left: -23px;
+}
+.menu-nav-deroule:hover .menu-deroule-1{
+  display: inline;
+}
+
 .p-composez {
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
     Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
@@ -244,6 +252,17 @@ button:hover {
   height: 19px;
   margin-left: 20px;
 }
+
+.boutique-1{
+  margin-left: -26px;
+  display: none;
+}
+
+.menu-nav-boutique:hover .boutique-1{
+  display: inline;
+}
+
+
 .p-boutique {
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
     Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
@@ -294,7 +313,7 @@ button:hover {
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
     Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
   margin-left: 272px;
-  margin-top: 0px;
+  margin-top: 15px;
   top: 890px;
   margin-bottom: 0px;
   padding-top: 5px;
@@ -334,8 +353,17 @@ button:hover {
   margin-top: 20px;
 }
 
-.coeur-1:hover {
-  color: blue;
+.coeur-violet-1{
+  display: none;
+  margin-left: -22px;
+}
+
+.activation-effet-1{
+  height: 39px;
+}
+
+.activation-effet-1:hover .coeur-violet-1 {
+display: inline;
 }
 
 /* LA NOTE ENCHANTEE*/
@@ -357,7 +385,7 @@ button:hover {
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
     Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
   margin-left: 272px;
-  margin-top: 0px;
+  margin-top: 15px;
   top: 1164px;
   margin-bottom: 0px;
   padding-top: 5px;
@@ -398,6 +426,20 @@ button:hover {
   margin-top: 20px;
 }
 
+.coeur-violet-2{
+  margin-left: -21px;
+  display: none;
+}
+
+.activation-effet-2{
+  height: 39px;
+}
+
+.activation-effet-2:hover .coeur-violet-2{
+  display: inline;
+}
+
+
 /*  A LA FRANCAISE*/
 
 .div-a-la-francaise {
@@ -435,6 +477,19 @@ button:hover {
   margin-left: 160px;
   margin-top: 20px;
 }
+
+
+.coeur-violet-3{
+  margin-left: -21px;
+  display: none;
+}
+.activation-effet-3{
+  height: 39px;
+}
+.activation-effet-3:hover .coeur-violet-3{
+display: inline;
+}
+
 
 /*  LE DELICE DES SENS*/
 
@@ -475,6 +530,23 @@ button:hover {
   margin-left: 124px;
   margin-top: 20px;
 }
+
+.coeur-violet-4{
+  margin-left: -21px;
+  display: none;
+}
+
+.activation-effet-4{
+  height: 39px;
+
+
+}
+
+
+.activation-effet-4:hover .coeur-violet-4{
+  display: inline;
+}
+
 
 /* FOOTER*/
 
