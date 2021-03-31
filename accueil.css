@@ -202,11 +202,11 @@ button:hover {
   margin-left: 15px;
 }
 
-.menu-deroule-1{
+.menu-deroule-1 {
   display: none;
   margin-left: -23px;
 }
-.menu-nav-deroule:hover .menu-deroule-1{
+.menu-nav-deroule:hover .menu-deroule-1 {
   display: inline;
 }
 
@@ -253,15 +253,14 @@ button:hover {
   margin-left: 20px;
 }
 
-.boutique-1{
+.boutique-1 {
   margin-left: -26px;
   display: none;
 }
 
-.menu-nav-boutique:hover .boutique-1{
+.menu-nav-boutique:hover .boutique-1 {
   display: inline;
 }
-
 
 .p-boutique {
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
@@ -353,17 +352,17 @@ button:hover {
   margin-top: 20px;
 }
 
-.coeur-violet-1{
+.coeur-violet-1 {
   display: none;
   margin-left: -22px;
 }
 
-.activation-effet-1{
+.activation-effet-1 {
   height: 39px;
 }
 
 .activation-effet-1:hover .coeur-violet-1 {
-display: inline;
+  display: inline;
 }
 
 /* LA NOTE ENCHANTEE*/
@@ -426,19 +425,18 @@ display: inline;
   margin-top: 20px;
 }
 
-.coeur-violet-2{
+.coeur-violet-2 {
   margin-left: -21px;
   display: none;
 }
 
-.activation-effet-2{
+.activation-effet-2 {
   height: 39px;
 }
 
-.activation-effet-2:hover .coeur-violet-2{
+.activation-effet-2:hover .coeur-violet-2 {
   display: inline;
 }
-
 
 /*  A LA FRANCAISE*/
 
@@ -478,18 +476,16 @@ display: inline;
   margin-top: 20px;
 }
 
-
-.coeur-violet-3{
+.coeur-violet-3 {
   margin-left: -21px;
   display: none;
 }
-.activation-effet-3{
+.activation-effet-3 {
   height: 39px;
 }
-.activation-effet-3:hover .coeur-violet-3{
-display: inline;
+.activation-effet-3:hover .coeur-violet-3 {
+  display: inline;
 }
-
 
 /*  LE DELICE DES SENS*/
 
@@ -531,22 +527,18 @@ display: inline;
   margin-top: 20px;
 }
 
-.coeur-violet-4{
+.coeur-violet-4 {
   margin-left: -21px;
   display: none;
 }
 
-.activation-effet-4{
+.activation-effet-4 {
   height: 39px;
-
-
 }
 
-
-.activation-effet-4:hover .coeur-violet-4{
+.activation-effet-4:hover .coeur-violet-4 {
   display: inline;
 }
-
 
 /* FOOTER*/
 
