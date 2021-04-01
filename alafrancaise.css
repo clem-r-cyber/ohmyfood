@@ -76,10 +76,13 @@ h3 {
   border-radius: 15px;
 }
 
-.div-tartare-de-poulpe:hover .bouton-validation{
+.div-tartare-de-poulpe:hover .bouton-validation {
   opacity: 1;
-  transition:width 2s 2s ease;
-  cursor: pointer;  
+  cursor: pointer;
+  display: block;
+  margin: 0px;
+  z-index: 1;
+  transition: 70px 0.45s ease-in-out;
 }
 
 .tartare-de-poulpe {
@@ -100,32 +103,34 @@ h3 {
   margin-left: 47px;
 }
 
-.bouton-validation {
+.bouton-validation-1 {
   opacity: 0;
-  margin-left: 13px;
-  width: 50px;
   border-radius: 0px 15px 15px 0px;
   background: yellowgreen;
 }
 
-.bouton-validation:hover{
-  transition:width 2s 2s ease;
+.bouton-validation-1:hover {
+  margin-left: 25px;
+  opacity: 1;
+  transform: scaleX(1.5);
+  transition-duration: 2s;
+  transform-origin: right;
+  
 }
 
-.validation {
+.validation-1 {
   margin-top: 20px;
   margin-left: 7px;
-  height: 18px;
+  height: 15px;
 }
 
-.validation:hover {
-  cursor: pointer;
+.validation-1:hover {
   transform: rotate(360deg);
   transition: transform 480ms ease-out 10ms;
 }
 /* VELOUTE DE LEGUMES*/
 
-.div-veloute-de-legumes{
+.div-veloute-de-legumes {
   width: 350px;
   margin-left: 15px;
   margin-top: 10px;
@@ -134,12 +139,12 @@ h3 {
   border-radius: 15px;
 }
 
-.div-veloute-de-legumes:hover .bouton-validation{
+.div-veloute-de-legumes:hover .bouton-validation {
   opacity: 1;
-  cursor: pointer;  
+  cursor: pointer;
 }
 
-.veloute-de-legumes{
+.veloute-de-legumes {
   margin-left: 10px;
   display: flex;
   line-height: 22px;
@@ -147,15 +152,67 @@ h3 {
 
 .veloute-de-legumes > p:nth-child(1) {
   width: 220px;
- } 
+}
 
-.veloute-de-legumes .p-titre-prix{
+.veloute-de-legumes .p-titre-prix {
   margin-bottom: 0px;
   margin-top: 28px;
   margin-left: 28px;
 }
 
-.p-titre{
+.p-titre {
   margin-top: 7px;
   margin-bottom: 7px;
+}
+/* SOUPE A L'OIGNON*/
+
+.div-soupe-a-l-oignon{
+  width: 350px;
+  margin-left: 15px;
+  margin-top: 10px;
+  background: white;
+  display: flex;
+  border-radius: 15px;
+}
+.div-soupe-a-l-oignon:hover .bouton-validation{
+  opacity: 1;
+  cursor: pointer;
+}
+.soupe-a-l-oignon{
+  margin-left: 10px;
+  display: flex;
+  line-height: 22px;
+}
+
+.soupe-a-l-oignon > p:nth-child(1) {
+  width: 157px;
+ }
+ 
+.soupe-a-l-oignon .p-titre-prix{
+  margin-bottom: 0px;
+  margin-top: 28px;
+  margin-left: 89px;
+}
+/* COQUILLE SQINT JACQUES*/
+
+.div-coquilles-saint-jacques{
+  width: 350px;
+  margin-left: 15px;
+  margin-top: 10px;
+  background: white;
+  display: flex;
+  border-radius: 15px;
+}
+
+.div-coquilles-saint-jacques:hover .bouton-validation{
+  opacity: 1;
+  cursor: pointer;
+}
+.coquilles-saint-jacques{
+  margin-left: 10px;
+  display: flex;
+  line-height: 22px;
+}
+.p-titre-1{
+  display: none;
 }
