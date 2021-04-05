@@ -76,19 +76,15 @@ h3 {
   border-radius: 15px;
 }
 
-.div-tartare-de-poulpe:hover .bouton-validation {
-  opacity: 1;
-  cursor: pointer;
-  display: block;
-  margin: 0px;
-  z-index: 1;
-  transition: 70px 0.45s ease-in-out;
-}
 
 .tartare-de-poulpe {
   margin-left: 10px;
   display: flex;
   line-height: 22px;
+}
+
+.tartare-de-poulpe:hover  .b-titre-prix {
+  margin-left: -30px;
 }
 
 .tartare-de-poulpe .p-titre {
@@ -104,19 +100,21 @@ h3 {
 }
 
 .bouton-validation-1 {
+  margin-left: 25px;
   opacity: 0;
-  border-radius: 0px 15px 15px 0px;
+  border-radius: 0px 10px 10px 0px;
   background: yellowgreen;
 }
 
 .bouton-validation-1:hover {
-  margin-left: 25px;
+ 
+  margin-right: 25px;
   opacity: 1;
   transform: scaleX(1.5);
-  transition-duration: 2s;
+  transition-duration: 1s;
   transform-origin: right;
-  
 }
+
 
 .validation-1 {
   margin-top: 20px;
@@ -125,8 +123,11 @@ h3 {
 }
 
 .validation-1:hover {
+  width: 15px;
+  height: 15px;
   transform: rotate(360deg);
   transition: transform 480ms ease-out 10ms;
+  
 }
 /* VELOUTE DE LEGUMES*/
 
@@ -166,7 +167,7 @@ h3 {
 }
 /* SOUPE A L'OIGNON*/
 
-.div-soupe-a-l-oignon{
+.div-soupe-a-l-oignon {
   width: 350px;
   margin-left: 15px;
   margin-top: 10px;
@@ -174,11 +175,11 @@ h3 {
   display: flex;
   border-radius: 15px;
 }
-.div-soupe-a-l-oignon:hover .bouton-validation{
+.div-soupe-a-l-oignon:hover .bouton-validation {
   opacity: 1;
   cursor: pointer;
 }
-.soupe-a-l-oignon{
+.soupe-a-l-oignon {
   margin-left: 10px;
   display: flex;
   line-height: 22px;
@@ -186,16 +187,16 @@ h3 {
 
 .soupe-a-l-oignon > p:nth-child(1) {
   width: 157px;
- }
- 
-.soupe-a-l-oignon .p-titre-prix{
+}
+
+.soupe-a-l-oignon .p-titre-prix {
   margin-bottom: 0px;
   margin-top: 28px;
   margin-left: 89px;
 }
 /* COQUILLE SQINT JACQUES*/
 
-.div-coquilles-saint-jacques{
+.div-coquilles-saint-jacques {
   width: 350px;
   margin-left: 15px;
   margin-top: 10px;
@@ -204,15 +205,22 @@ h3 {
   border-radius: 15px;
 }
 
-.div-coquilles-saint-jacques:hover .bouton-validation{
+.div-coquilles-saint-jacques:hover .bouton-validation {
   opacity: 1;
   cursor: pointer;
 }
-.coquilles-saint-jacques{
+.coquilles-saint-jacques {
   margin-left: 10px;
   display: flex;
   line-height: 22px;
 }
-.p-titre-1{
+
+.p-titre-coquille-1{
+  position: absolute;
+  margin-top: 37px;
+  display: none;
+}
+
+.b-titre-coquille-1:hover{
   display: none;
 }
