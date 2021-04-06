@@ -75,7 +75,20 @@ h3 {
   display: flex;
   border-radius: 15px;
 }
+.div-tartare-de-poulpe:hover .bouton-validation {
+  margin-left: 25px;
+  opacity: 1;
+  transform: scaleX(1.5);
+  transition-duration: 1s;
+  transform-origin: right;
+}
 
+.div-tartare-de-poulpe:hover .validation {
+  width: 15px;
+  height: 15px;
+  transform: rotate(360deg);
+  transition: transform 480ms ease-out 10ms;
+}
 
 .tartare-de-poulpe {
   margin-left: 10px;
@@ -83,8 +96,8 @@ h3 {
   line-height: 22px;
 }
 
-.tartare-de-poulpe:hover  .b-titre-prix {
-  margin-left: -30px;
+.tartare-de-poulpe:hover .b-titre-prix {
+  margin-left: -40px;
 }
 
 .tartare-de-poulpe .p-titre {
@@ -94,41 +107,25 @@ h3 {
 }
 
 .tartare-de-poulpe .p-titre-prix {
+  display: inline-block;
   margin-bottom: 0px;
   margin-top: 28px;
-  margin-left: 47px;
+  margin-left: 83px;
 }
 
-.bouton-validation-1 {
-  margin-left: 25px;
+.bouton-validation {
+  margin-left: 26px;
   opacity: 0;
   border-radius: 0px 10px 10px 0px;
   background: yellowgreen;
 }
 
-.bouton-validation-1:hover {
- 
-  margin-right: 25px;
-  opacity: 1;
-  transform: scaleX(1.5);
-  transition-duration: 1s;
-  transform-origin: right;
-}
-
-
-.validation-1 {
+.validation {
   margin-top: 20px;
   margin-left: 7px;
-  height: 15px;
+  height: 20px;
 }
 
-.validation-1:hover {
-  width: 15px;
-  height: 15px;
-  transform: rotate(360deg);
-  transition: transform 480ms ease-out 10ms;
-  
-}
 /* VELOUTE DE LEGUMES*/
 
 .div-veloute-de-legumes {
@@ -141,11 +138,21 @@ h3 {
 }
 
 .div-veloute-de-legumes:hover .bouton-validation {
+  margin-left: 25px;
   opacity: 1;
-  cursor: pointer;
+  transform: scaleX(1.5);
+  transition-duration: 1s;
+  transform-origin: right;
+}
+.div-veloute-de-legumes:hover .validation {
+  width: 15px;
+  height: 15px;
+  transform: rotate(360deg);
+  transition: transform 480ms ease-out 10ms;
 }
 
 .veloute-de-legumes {
+  width: 340px;
   margin-left: 10px;
   display: flex;
   line-height: 22px;
@@ -155,10 +162,33 @@ h3 {
   width: 220px;
 }
 
+.veloute-de-legumes:hover .b-titre-prix {
+  margin-left: -10px;
+}
+
 .veloute-de-legumes .p-titre-prix {
+  display: inline-block;
   margin-bottom: 0px;
   margin-top: 28px;
-  margin-left: 28px;
+  margin-left: 21px;
+  width: -100px;
+}
+
+.veloute-de-legumes:hover .p-titre-prix {
+  margin-left: 22px;
+}
+
+.veloute-de-legumes > p:nth-child(2) {
+  margin-left: 62px;
+  height: 30px;
+  margin-top: 28px;
+  width: 0px;
+}
+
+.veloute-de-legumes > p:nth-child(2) > b:nth-child(1) {
+  margin-left: 0px;
+  margin-right: 0px;
+  padding-right: 0px;
 }
 
 .p-titre {
@@ -176,9 +206,19 @@ h3 {
   border-radius: 15px;
 }
 .div-soupe-a-l-oignon:hover .bouton-validation {
+  margin-left: 25px;
   opacity: 1;
-  cursor: pointer;
+  transform: scaleX(1.5);
+  transition-duration: 1s;
+  transform-origin: right;
 }
+.div-soupe-a-l-oignon:hover .validation {
+  width: 15px;
+  height: 15px;
+  transform: rotate(360deg);
+  transition: transform 480ms ease-out 10ms;
+}
+
 .soupe-a-l-oignon {
   margin-left: 10px;
   display: flex;
@@ -186,15 +226,37 @@ h3 {
 }
 
 .soupe-a-l-oignon > p:nth-child(1) {
-  width: 157px;
+  width: 220px;
+}
+.div-soupe-a-l-oignon:hover .b-titre-prix {
+  margin-left: -10px;
 }
 
 .soupe-a-l-oignon .p-titre-prix {
+  display: inline-block;
   margin-bottom: 0px;
   margin-top: 28px;
-  margin-left: 89px;
+  margin-left: 83px;
 }
-/* COQUILLE SQINT JACQUES*/
+
+.soupe-a-l-oignon:hover .p-titre-prix {
+  margin-left: 57px;
+}
+
+.soupe-a-l-oignon > p:nth-child(2) {
+  margin-left: 60px;
+  height: 30px;
+  margin-top: 28px;
+  width: 0px;
+}
+
+.soupe-a-l-oignon:hover > p:nth-child(2) > b:nth-child(1) {
+  margin-left: -45px;
+  margin-right: 0px;
+  padding-right: 0px;
+}
+
+/* COQUILLE SAINT JACQUES*/
 
 .div-coquilles-saint-jacques {
   width: 350px;
@@ -206,21 +268,207 @@ h3 {
 }
 
 .div-coquilles-saint-jacques:hover .bouton-validation {
+  margin-left: 25px;
   opacity: 1;
-  cursor: pointer;
+  transform: scaleX(1.5);
+  transition-duration: 1s;
+  transform-origin: right;
+}
+.div-coquilles-saint-jacques:hover .validation{
+  width: 15px;
+  height: 15px;
+  transform: rotate(360deg);
+  transition: transform 480ms ease-out 10ms;
 }
 .coquilles-saint-jacques {
+  height: 58px;
   margin-left: 10px;
   display: flex;
   line-height: 22px;
 }
 
-.p-titre-coquille-1{
-  position: absolute;
-  margin-top: 37px;
-  display: none;
+.p-titre-coquille {
+  width: 280px;
+  margin-top: 7px;
+  height: 50px;
+  margin-bottom: 7px;
 }
 
-.b-titre-coquille-1:hover{
-  display: none;
+.p-titre-coquille-1 {
+  position: absolute;
+  margin-top: 7px;
+  margin-bottom: 7px;
+  opacity: 0;
+  margin-left: 45px;
+}
+
+.coquilles-saint-jacques:hover{
+  margin-left: -38px;
+}
+
+p.p-titre-prix:nth-child(3) {
+  margin-left: 9px;
+  margin-bottom: 16px;
+  margin-top: 29px;
+ }
+ 
+
+p.p-titre-prix:nth-child(3):hover {
+  margin-left: -50px;
+  margin-top: 30px;
+margin-bottom: 0px;
+width: 0px;
+height: 30px;
+}
+
+p.p-titre-prix:nth-child(3):hover {
+  margin-left: -39px;
+ }
+ 
+
+.div-coquilles-saint-jacques:hover .p-titre-coquille-1 {
+  opacity: 1;
+}
+.div-coquilles-saint-jacques:hover .p-titre-coquille {
+  opacity: 0;
+}
+
+.div-coquilles-saint-jacques:hover > span:nth-child(2) {
+  margin-left: 30px;
+ }
+ 
+/* MAGRET DE CANARD */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* FOOTER*/
+
+.div-footer {
+  background: #141414d8;
+  width: 375px;
+  height: 160px;
+  padding-top: 1px;
+  margin-top: -20px;
+}
+
+.logo-de-la-chaine-footer {
+  margin-bottom: 10px;
+  font-family: "Shrikhand", cursive;
+  font-size: 20px;
+  width: 175px;
+  color: white;
+  margin-left: 20px;
+}
+
+.bloc-footer-image-1 {
+  display: flex;
+  align-items: center;
+  margin-left: 15px;
+}
+
+.couvert-footer {
+  margin-top: -7px;
+}
+
+.p-couvert {
+  margin: 0px;
+  margin-bottom: 10px;
+  font-size: 13px;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  margin-left: 15px;
+  color: white;
+}
+
+.bloc-footer-image-2 {
+  display: flex;
+  align-items: center;
+  margin-left: 15px;
+}
+
+.p-poignet-de-mains {
+  margin: 0px;
+  font-size: 13px;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  margin-left: 15px;
+  color: white;
+}
+
+.mention {
+  margin-top: 5px;
+  margin-left: 15px;
+  margin-bottom: 0px;
+  font-size: 13px;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  color: white;
+}
+
+.contact {
+  margin-top: 5px;
+  margin-left: 15px;
+  font-size: 13px;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  color: white;
 }
