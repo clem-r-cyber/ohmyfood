@@ -2,13 +2,13 @@ html {
   margin-top: -8px;
   margin-left: -8px;
 }
-body{
+body {
   width: 100vh;
-height: 100vh;
+  height: 100vh;
 }
 
 /*header*/
- 
+
 /* .spinner {
   position: fixed;
   z-index: 999;
@@ -69,10 +69,6 @@ background-color: rgba(255,255,255,0.5);
     transform: rotate(360deg);
   }
 } */
-  
-
-
-
 
 header {
   margin: 0px;
