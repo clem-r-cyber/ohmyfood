@@ -1,0 +1,53 @@
+@keyframes derouler {
+  0%{
+    transform: scaleX(0);}
+
+    100%{
+      transform: scaleX(1.2);
+    }
+}
+
+@keyframes opacity {
+  0% {
+opacity:0;
+  }
+  100%{
+opacity:1;
+  }
+}
+
+@keyframes translation {
+  0%{
+    translate:0;
+  }
+  100%{
+    translate:-20%;
+  }
+}
+
+
+
+/* GENERIQUE */
+
+.bouton-validation {
+  position: absolute;
+  height: 80px;
+  width: 20%;
+  padding: 0px 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  right: 0px;
+  transform-origin: right;
+  color: #fff;
+  background-color: #99e2d0;
+  border-radius: 0px 15px 15px 0px;
+  font-size: 18px;
+  opacity: 0;
+}
+
+.validation {
+  height: 12px;
+  transform: rotate(360deg);
+  transition: transform 0ms 0ms linear both;
+}
