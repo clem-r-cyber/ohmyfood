@@ -146,10 +146,7 @@ h3 {
   margin-left: 10px;
 }
 
-.p-titre-prix:hover{
-  background: red;
 
-}
 
 .div-tartare-de-poulpe:hover .p-titre-prix {
   margin-left: 20px;
@@ -283,22 +280,19 @@ h3 {
 
 .coquilles-saint-jacques {
   max-width:1600px;
-  width: 650px;
+  display: flex;
   align-items: center;
   justify-content: center;
+  line-height: 22px;
+}
+.coquilles-saint-jacques .p-titre-prix{
+margin-left: 265px;
 }
 
-.coquilles-saint-jacques .p-titre-prix {
- margin-left: 316px;
+.div-coquilles-saint-jacques:hover .p-titre-prix{
+  margin-left: 100px;
+  transition-duration: 300ms;
 }
-
-
-
-div.bouton-validation:nth-child(3) {
- top: 508.5px;
- left: 624px;
-}
-
 
 /* Magret */
 
