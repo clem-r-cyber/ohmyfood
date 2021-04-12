@@ -23,7 +23,7 @@ header {
   height: auto;
 }
 
-.photo-plat-restaurant {
+.photo-plat-restaurant-2 {
   height: 100vh;
   width: 100vw;
   object-fit: cover;
@@ -33,7 +33,7 @@ header {
   display: flex;
 }
 
-.logo-chaine-1 {
+.logo-chaine-2 {
 margin-left: 100%;
 margin-bottom: 30px;
 margin-top: 10px;
@@ -106,9 +106,9 @@ h3 {
   border-radius: 15px 15px 0px 0px;
 }
 
-/* TARTARE DE POULPE ACIDULE*/
+/* ravioles-de-foie-gras*/
 
-.div-tartare-de-poulpe {
+.div-ravioles-de-foie-gras {
   position: relative;
   height: 80px;
   width: 100%;
@@ -119,7 +119,7 @@ h3 {
   background-color: #fff;
   border-radius: 15px;
 }
-.div-tartare-de-poulpe:hover .bouton-validation {
+.div-ravioles-de-foie-gras:hover .bouton-validation {
   
   opacity: 1;
   transform: scaleX(1.2);
@@ -131,7 +131,7 @@ h3 {
   cursor: pointer;
 }
 
-.tartare-de-poulpe {
+.ravioles-de-foie-gras{
  
   max-width:1600px;
   display: flex;
@@ -146,27 +146,23 @@ h3 {
   margin-left: 10px;
 }
 
-.p-titre-prix:hover{
-  background: red;
 
-}
-
-.div-tartare-de-poulpe:hover .p-titre-prix {
+.div-ravioles-de-foie-gras:hover .p-titre-prix {
   margin-left: 20px;
   transition-duration: 300ms;
 }
 
-.tartare-de-poulpe .p-titre-prix {
+.ravioles-de-foie-gras .p-titre-prix {
   margin-left: 180px;
 }
 
-.tartare-de-poulpe > p:nth-child(2) > b:nth-child(1) {
+.ravioles-de-foie-gras > p:nth-child(2) > b:nth-child(1) {
   margin-left: 85px;
 }
 
-/* VELOUTE DE LEGUMES*/
+/* caviar-oscietre*/
 
-.div-veloute-de-legumes {
+.div-caviar-oscietre {
   position: relative;
   height: 80px;
   width: 100%;
@@ -178,7 +174,7 @@ h3 {
   border-radius: 15px;
 }
 
-.div-veloute-de-legumes:hover .bouton-validation {
+.div-caviar-oscietre:hover .bouton-validation {
   opacity: 1;
   transform: scaleX(1.2);
   transition-duration: 400ms;
@@ -187,7 +183,7 @@ h3 {
   cursor: pointer;
 }
 
-.veloute-de-legumes {
+.caviar-oscietre {
    
   max-width:1600px;
   display: flex;
@@ -201,22 +197,22 @@ h3 {
   margin-left: 10px;
 }
 
-.div-veloute-de-legumes:hover .p-titre-prix {
+.div-caviar-oscietre:hover .p-titre-prix {
   margin-left: 20px;
   transition-duration: 300ms;
 }
 
-.veloute-de-legumes .p-titre-prix {
+.caviar-oscietre .p-titre-prix {
   margin-left: 182px;
 }
 
-.veloute-de-legumes > p:nth-child(2) > b:nth-child(1) {
+.caviar-oscietre > p:nth-child(2) > b:nth-child(1) {
   margin-left: 85px;
 }
 
-/* SOUPE A L'OIGNON*/
+/* homard-et-espuma-de-potiron*/
 
-.div-soupe-a-l-oignon {
+.div-homard-et-espuma-de-potiron {
   position: relative;
   height: 80px;
   width: 100%;
@@ -228,7 +224,7 @@ h3 {
   border-radius: 15px;
 }
 
-.div-soupe-a-l-oignon:hover .bouton-validation {
+.div-homard-et-espuma-de-potiron:hover .bouton-validation {
   opacity: 1;
   transform: scaleX(1.2);
   transition-duration: 400ms;
@@ -238,7 +234,7 @@ h3 {
   cursor: pointer;
 }
 
-.soupe-a-l-oignon {
+.homard-et-espuma-de-potiron {
   max-width:1600px;
   display: flex;
   align-items: center;
@@ -246,21 +242,19 @@ h3 {
   line-height: 22px;
 }
 
-.soupe-a-l-oignon .p-titre-prix {
-  margin-left: 265px;
-}
-
-.div-soupe-a-l-oignon:hover .p-titre-prix {
+.div-homard-et-espuma-de-potiron:hover .p-titre-prix {
   margin-left: 100px;
   transition-duration: 300ms;
 }
-/* section plat */
+
+.homard-et-espuma-de-potiron .p-titre-prix {
+  margin-left: 260px;
+}
+
+/* foie-gras-de-canard-cuit-entier*/
 
 
-
-/* COQUILLE SAINT JACQUES*/
-
-.div-coquilles-saint-jacques {
+.div-foie-gras-de-canard-cuit-entier{
   position: relative;
   height: 80px;
   width: 100%;
@@ -272,7 +266,52 @@ h3 {
   border-radius: 15px;
 }
 
-.div-coquilles-saint-jacques:hover .bouton-validation {
+.div-foie-gras-de-canard-cuit-entier:hover .bouton-validation {
+   opacity: 1;
+  transform: scaleX(1.2);
+  transition-duration: 400ms;
+  transform-origin: right;
+  animation-name: derouler;
+  animation: 300ms 0ms linear ease-out;
+  cursor: pointer;
+}
+
+.foie-gras-de-canard-cuit-entier{
+  max-width:1600px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  line-height: 22px;
+}
+
+.div-foie-gras-de-canard-cuit-entier:hover .p-titre-prix{
+  margin-left: 100px;
+  transition-duration: 300ms;
+}
+
+.foie-gras-de-canard-cuit-entier .p-titre-prix{
+  margin-left: 260px;
+}
+
+/* section plat */
+
+
+
+/* noix-de-coquille-saint-jacques*/
+
+.div-noix-de-coquille-saint-jacques {
+  position: relative;
+  height: 80px;
+  width: 100%;
+  margin-top: 15px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  background-color: #fff;
+  border-radius: 15px;
+}
+
+.div-noix-de-coquille-saint-jacques:hover .bouton-validation {
   opacity: 1;
   transform: scaleX(1.2);
   transition-duration: 400ms;
@@ -281,28 +320,31 @@ h3 {
   cursor: pointer;
 }
 
-.coquilles-saint-jacques {
-  max-width:1600px;
-  width: 650px;
+.noix-de-coquille-saint-jacques {
+ max-width:1600px;
+  display: flex;
   align-items: center;
   justify-content: center;
+  line-height: 22px;
 }
 
-.coquilles-saint-jacques .p-titre-prix {
- margin-left: 316px;
+.div-noix-de-coquille-saint-jacques:hover .p-titre-prix {
+margin-left: 100px;
+  transition-duration: 300ms;
+}
+
+.noix-de-coquille-saint-jacques .p-titre-prix {
+margin-left: 260px;
 }
 
 
 
-div.bouton-validation:nth-child(3) {
- top: 508.5px;
- left: 624px;
-}
 
 
-/* Magret */
 
-.div-magret-de-canard{
+/* langoustine*/
+
+.div-langoustine-poelee{
 position: relative;
   height: 80px;
   width: 100%;
@@ -314,7 +356,7 @@ position: relative;
   border-radius: 15px;
 }
 
-.div-magret-de-canard:hover .bouton-validation{
+.div-langoustine-poelee:hover .bouton-validation{
   opacity: 1;
   transform: scaleX(1.2);
   transition-duration: 400ms;
@@ -323,7 +365,7 @@ position: relative;
   cursor: pointer;
 }
 
-.magret-de-canard{
+.langoustine-poelee{
   margin-left: 10px;
   max-width:1600px;
   display: flex;
@@ -331,56 +373,19 @@ position: relative;
   justify-content: center;
   line-height: 22px;
 }
-.magret-de-canard .p-titre-prix{
+.langoustine-poelee .p-titre-prix{
   margin-left: 280px;
 }
-.div-magret-de-canard:hover .p-titre-prix{
+.div-langoustine-poelee:hover .p-titre-prix{
   margin-left: 120px;
   transition-duration: 300ms;
 }
-.p-titre-magret{
-  width:300px;
-
-}
 
 
 
+/* mijote */
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* pigeonneau */
-
-.div-pigeonneau-d-illes-et-vilaine {
+.div-mijote-de-queue-de-boeuf{
   position: relative;
   height: 80px;
   width: 100%;
@@ -393,7 +398,7 @@ position: relative;
 }
 
 
-.div-pigeonneau-d-illes-et-vilaine:hover .bouton-validation {
+.div-mijote-de-queue-de-boeuf:hover .bouton-validation {
 opacity: 1;
   transform: scaleX(1.2);
   transition-duration: 400ms;
@@ -403,7 +408,7 @@ opacity: 1;
   cursor: pointer;
 }
 
-.pigeonneau-d-illes-et-vilaine {
+.mijote-de-queue-de-boeuf {
   max-width:1600px;
   margin-left: 10px;
   display: flex;
@@ -413,25 +418,22 @@ opacity: 1;
 }
 
 
-.pigeonneau-d-illes-et-vilaine .p-titre-prix {
- margin-left: 330px; 
+.mijote-de-queue-de-boeuf .p-titre-prix {
+ margin-left: 280px; 
 }
 
-.div-pigeonneau-d-illes-et-vilaine:hover .p-titre-prix {
-  margin-left: 170px;
+.div-mijote-de-queue-de-boeuf:hover .p-titre-prix {
+  margin-left: 130px;
   transition-duration: 300ms;
-}
-
-.p-titre-pigeonneau {
-  width: 250px;
 }
 
 
 
 /* DESSERT */
+/* macaron */
 
 
-.div-petales-de-violettes-glaces{
+.div-macaron-noisette-et-chocolat{
   position: relative;
   height: 80px;
   width: 100%;
@@ -443,7 +445,7 @@ opacity: 1;
   border-radius: 15px;
 }
 
-.div-petales-de-violettes-glaces:hover .bouton-validation{
+.div-macaron-noisette-et-chocolat:hover .bouton-validation{
  opacity: 1;
   transform: scaleX(1.2);
   transition-duration: 400ms;
@@ -453,7 +455,7 @@ opacity: 1;
   cursor: pointer;
 }
 
-.petales-de-violettes-glaces{
+.macaron-noisette-et-chocolat{
   max-width:1600px;
   margin-left: 10px;
   display: flex;
@@ -462,22 +464,19 @@ opacity: 1;
   line-height: 22px;
 }
 
-.petales-de-violettes-glaces .p-titre-prix{
-  margin-left: 330px;
+.macaron-noisette-et-chocolat .p-titre-prix{
+  margin-left: 290px;
 }
-.div-petales-de-violettes-glaces:hover .p-titre-prix{
-  margin-left: 180px;
+.div-macaron-noisette-et-chocolat:hover .p-titre-prix{
+  margin-left: 140px;
   transition-duration: 300ms;
 }
 
-.p-titre-petale {
-  width:250px
 
-}
 
-/* FONDANT AU CHOCOLAT */
+/* baba */
 
-.div-fondant-au-chocolat{
+.div-baba-au-rhum-revisite{
   position: relative;
   height: 80px;
   width: 100%;
@@ -489,7 +488,7 @@ opacity: 1;
   border-radius: 15px;
 }
 
-.div-fondant-au-chocolat:hover .bouton-validation {
+.div-baba-au-rhum-revisite:hover .bouton-validation {
   opacity: 1;
   transform: scaleX(1.2);
   transition-duration: 400ms;
@@ -499,7 +498,7 @@ opacity: 1;
   cursor: pointer;
 }
 
-.fondant-au-chocolat{
+.baba-au-rhum-revisite{
   max-width:1600px;
   margin-left: 10px;
   display: flex;
@@ -508,17 +507,17 @@ opacity: 1;
   line-height: 22px;
 }
 
-.fondant-au-chocolat .p-titre-prix {
+.baba-au-rhum-revisite .p-titre-prix {
   margin-left: 250px;
 }
- .div-fondant-au-chocolat:hover .p-titre-prix{
+ .div-baba-au-rhum-revisite:hover .p-titre-prix{
    margin-left: 100px;
   transition-duration: 300ms;
  }
 
  /* Millefeuilles */
 
-.div-millefeuille-croustillant{
+.div-tarte-au-citron-meringuee{
   position: relative;
   height: 80px;
   width: 100%;
@@ -530,7 +529,7 @@ opacity: 1;
   border-radius: 15px;
 }
 
-.div-millefeuille-croustillant:hover .bouton-validation {
+.div-tarte-au-citron-meringuee:hover .bouton-validation {
   opacity: 1;
   transform: scaleX(1.2);
   transition-duration: 400ms;
@@ -540,7 +539,7 @@ opacity: 1;
   cursor: pointer;
 }
 
-.millefeuille-croustillant{
+.tarte-au-citron-meringuee{
   max-width:1600px;
   margin-left: 10px;
   display: flex;
@@ -549,11 +548,11 @@ opacity: 1;
   line-height: 22px;
 }
 
-.millefeuille-croustillant .p-titre-prix{
+.tarte-au-citron-meringuee .p-titre-prix{
   margin-left: 250px;
 }
 
-.div-millefeuille-croustillant:hover .p-titre-prix{
+.div-tarte-au-citron-meringuee:hover .p-titre-prix{
   margin-left: 100px;
   transition-duration: 300ms;
 }

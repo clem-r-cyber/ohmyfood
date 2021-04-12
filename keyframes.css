@@ -1,35 +1,35 @@
 @keyframes derouler {
-  0%{
-    transform: scaleX(0);}
+  0% {
+    transform: scaleX(0);
+  }
 
-    100%{
-      transform: scaleX(1.2);
-    }
+  100% {
+    transform: scaleX(1.2);
+  }
 }
 
 @keyframes opacity {
   0% {
-opacity:0;
+    opacity: 0;
   }
-  100%{
-opacity:1;
+  100% {
+    opacity: 1;
   }
 }
 
 @keyframes translation {
-  0%{
-    translate:0;
+  0% {
+    translate: 0;
   }
-  100%{
-    translate:-20%;
+  100% {
+    translate: -20%;
   }
 }
-
-
 
 /* GENERIQUE */
 
 .bouton-validation {
+  
   position: absolute;
   height: 80px;
   width: 20%;
