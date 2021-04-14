@@ -27,19 +27,15 @@
 }
 @keyframes spinner {
   0% {
-  
     transform: rotate(0deg);
   }
   100% {
-    
-    
     transform: rotate(360deg);
   }
 }
 /* GENERIQUE */
 
 .bouton-validation {
-  
   position: absolute;
   height: 80px;
   width: 20%;
@@ -48,7 +44,7 @@
   align-items: center;
   justify-content: center;
   right: 0px;
-  top:0px;
+  top: 0px;
   transform-origin: right;
   color: #fff;
   background-color: #99e2d0;
@@ -64,3 +60,41 @@
   transition: transform 0ms 0ms linear both;
 }
 
+h4{
+ 
+  display: block;
+font-size: 1.17em;
+font-weight: bold;
+margin-block-start: 1em;
+margin-block-end: 1em;
+}
+
+
+h4.p-titre{
+  font-size: 1em;
+overflow: hidden; 
+text-overflow: ellipsis;
+white-space: nowrap;
+flex-shrink: 0;
+ margin-top: 0px;
+ margin-bottom: 0px;
+ margin-left: 10px;
+}
+
+h4.p-titre-prix{
+font-size: 0.8em;
+width: 30%;
+padding-left: 20%;
+padding-right: 2%;
+text-align: center;
+}
+
+h5{
+font-weight: 100;
+white-space: nowrap;
+overflow: hidden;
+text-overflow: ellipsis;
+margin-top: 0px;
+margin-bottom: 0px;
+margin-left: 10px;
+}

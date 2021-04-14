@@ -159,46 +159,6 @@ transform-origin: left;
 flex-wrap: nowrap;
 }
 
-h4{
-  display: block;
-font-size: 1.17em;
-font-weight: bold;
-margin-block-start: 1em;
-margin-block-end: 1em;
-}
-
-
-h4.p-titre{
-  overflow: hidden; 
-  text-overflow: ellipsis;
-  white-space: nowrap;
-  width: 20rem;
-  flex-shrink: 0;
- margin-top: 0px;
- margin-bottom: 0px;
- margin-left: 10px;
-}
-
-h4.p-titre-prix{
-font-size: 1em;
-content:100px;
-width: 30%;
-padding-left: 20%;
-padding-right: 2%;
-text-align: center;
-}
-
-h5{
-font-weight: 100;
-white-space: nowrap;
-overflow: hidden;
-text-overflow: ellipsis;
-margin-top: 0px;
-margin-bottom: 0px;
-margin-left: 10px;
-}
-
-
 
 /* CAVIAR OSCIETRE*/
 
@@ -216,15 +176,14 @@ margin-left: 10px;
 .div-caviar-oscietre:hover .bouton-validation {
   opacity: 1;
   transform: scaleX(1.2);
-  transition-duration: 400ms;
   transform-origin: right;
   animation-name: derouler;
-  animation: 300ms 0ms linear ease-out;
+  animation: 400ms 0ms linear ease-out;
   cursor: pointer;
 }
 
 .div-caviar-oscietre:hover .p-titre-prix {
-animation: translation 400ms 0ms linear both;
+animation: translation 300ms 0ms linear both;
 padding-left: 0%;
 padding-right: 21%;
 }
@@ -542,12 +501,13 @@ width: 70%;
 padding: 0px 1%;
 transform-origin: left;
 }
-}
+
 
 
 /* bouton commander */
 
 .bouton-commander{
+  align-content: center;
 font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI',
     Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans',
     'Helvetica Neue', sans-serif;
@@ -561,14 +521,19 @@ font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI',
     rgba(255, 121, 218, 1) 0%,
     rgba(147, 86, 220, 1) 100%
   );
+  width: 35%;
 border: 2px;
 border-radius: 35px;
 height: 50px;
-width:40%;
 margin-top: 30px;
 margin-right: auto;
 margin-bottom: 30px;
 margin-left: auto;
+box-shadow: #354146 3px 2px 5px;
+}
+.commander:hover{
+  transform: scale(1.05);
+  cursor:pointer;
 }
 
 .p-botton-commander{
@@ -588,11 +553,7 @@ top:340px;
 width: 100%;
 background-color: #354146;
 
-  /* background: #141414d8;
-  width: 375px;
-  height: 160px;
-  padding-top: 1px;
-  margin-top: -20px; */
+
 }
 
 
@@ -601,9 +562,9 @@ background-color: #354146;
   margin-bottom: 10px;
   font-family: 'Shrikhand', cursive;
   font-size: 20px;
-  width: 175px;
+  width: 100%;
   color: white;
-  margin-left: 48%;
+  margin-left: 45%;
 }
 
 .bloc-footer-image-1 {
@@ -670,5 +631,6 @@ background-color: #354146;
 
 
 footer{
+  width:100%;
   align-items: center;
 }

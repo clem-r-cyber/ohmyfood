@@ -33,7 +33,7 @@ justify-content: center;
 position: relative;
 }
 
-.photo-plat-restaurant {
+.photo-plat-restaurant-3 {
   height: 100%;
   width: 100%;
   object-fit: cover;
@@ -43,7 +43,7 @@ position: relative;
   display: flex;
 }
 
-.logo-chaine-1 {
+.logo-chaine-2 {
 display: block;
 height: 100%;
 width: 100%;
@@ -110,7 +110,6 @@ h3 {
 }
 
 #ensemble-du-menu {
-  align-content: center;
   box-sizing: border-box;
   width: 100%;
   max-width: 800px;
@@ -124,45 +123,9 @@ h3 {
   border-radius: 15px 15px 0px 0px;
 }
 
-/* TARTARE DE POULPE ACIDULE*/
+/*FRICASSEE D'ESCARGOT*/
 
-.div-tartare-de-poulpe {
-   position: relative;
-  height: 80px;
-  width: 100%;
-  margin-top: 15px;
-  display: flex;
-  align-items: center;
-  background-color: #fff;
-  border-radius: 15px;
-}
-.div-tartare-de-poulpe:hover .bouton-validation {
-   opacity: 1;
-  transform: scaleX(1.2);
-  transition-duration: 400ms;
-  transform-origin: right;
-  animation-name: derouler;
-  animation: 300ms 0ms linear ease-out;
-  cursor: pointer;
-}
-
-.div-tartare-de-poulpe:hover .p-titre-prix {
-  animation: translation 400ms 0ms linear both;
-padding-left: 0%;
-padding-right: 21%;
-}
-
-.tartare-de-poulpe {
- width: 70%;
-padding: 0px 1%;
-transform-origin: left;
-flex-wrap: nowrap;
-}
-
-
-/* VELOUTE DE LEGUMES*/
-
-.div-veloute-de-legumes {
+.div-fricassee-d-escargot {
   position: relative;
   height: 80px;
   width: 100%;
@@ -172,8 +135,8 @@ flex-wrap: nowrap;
   background-color: #fff;
   border-radius: 15px;
 }
-
-.div-veloute-de-legumes:hover .bouton-validation {
+.div-fricassee-d-escargot:hover .bouton-validation {
+ 
   opacity: 1;
   transform: scaleX(1.2);
   transition-duration: 400ms;
@@ -182,24 +145,24 @@ flex-wrap: nowrap;
   animation: 300ms 0ms linear ease-out;
   cursor: pointer;
 }
-.div-veloute-de-legumes:hover .p-titre-prix {
-  animation: translation 400ms 0ms linear both;
+
+.div-fricassee-d-escargot:hover .p-titre-prix{
+animation: translation 400ms 0ms linear both;
 padding-left: 0%;
 padding-right: 21%;
 }
 
-.veloute-de-legumes {
-  width: 70%;
+.fricassee-d-escargot{
+width: 70%;
 padding: 0px 1%;
 transform-origin: left;
 flex-wrap: nowrap;
 }
 
 
+/* FOIE GRAS DE CANARD MI-CUIT*/
 
-/* SOUPE A L'OIGNON*/
-
-.div-soupe-a-l-oignon {
+.div-Foie-gras-de-canard-mi-cuit {
   position: relative;
   height: 80px;
   width: 100%;
@@ -210,7 +173,43 @@ flex-wrap: nowrap;
   border-radius: 15px;
 }
 
-.div-soupe-a-l-oignon:hover .bouton-validation {
+.div-Foie-gras-de-canard-mi-cuit:hover .bouton-validation {
+  opacity: 1;
+  transform: scaleX(1.2);
+  transform-origin: right;
+  animation-name: derouler;
+  animation: 400ms 0ms linear ease-out;
+  cursor: pointer;
+}
+
+.div-Foie-gras-de-canard-mi-cuit:hover .p-titre-prix {
+animation: translation 300ms 0ms linear both;
+padding-left: 0%;
+padding-right: 21%;
+}
+
+.Foie-gras-de-canard-mi-cuit {
+width: 70%;
+padding: 0px 1%;
+transform-origin: left;
+flex-wrap: nowrap;
+}
+
+
+/* OEUF AU PLAT*/
+
+.div-oeuf-au-plat {
+  position: relative;
+  height: 80px;
+  width: 100%;
+  margin-top: 15px;
+  display: flex;
+  align-items: center;
+  background-color: #fff;
+  border-radius: 15px;
+}
+
+.div-oeuf-au-plat:hover .bouton-validation {
   opacity: 1;
   transform: scaleX(1.2);
   transition-duration: 400ms;
@@ -219,28 +218,100 @@ flex-wrap: nowrap;
   animation: 300ms 0ms linear ease-out;
   cursor: pointer;
 }
-.div-soupe-a-l-oignon:hover .p-titre-prix {
- animation: translation 400ms 0ms linear both;
+
+.div-oeuf-au-plat:hover .p-titre-prix {
+animation: translation 400ms 0ms linear both;
 padding-left: 0%;
 padding-right: 21%;
 }
 
-.soupe-a-l-oignon {
-  width: 70%;
+.oeuf-au-plat {
+flex-wrap: nowrap;
+width: 70%;
 padding: 0px 1%;
 transform-origin: left;
+
+}
+/* SECTION PLAT */
+
+/* FILET DE BOEUF AUX HERBES*/
+
+
+.div-filet-de-boeuf-aux-herbes{
+  position: relative;
+  height: 80px;
+  width: 100%;
+  margin-top: 15px;
+  display: flex;
+  align-items: center;
+  background-color: #fff;
+  border-radius: 15px;
+}
+
+.div-filet-de-boeuf-aux-herbes:hover .bouton-validation {
+  opacity: 1;
+  transform: scaleX(1.2);
+  transition-duration: 400ms;
+  transform-origin: right;
+  animation-name: derouler;
+  animation: 300ms 0ms linear ease-out;
+  cursor: pointer;
+}
+.div-filet-de-boeuf-aux-herbes:hover .p-titre-prix{
+animation: translation 400ms 0ms linear both;
+padding-left: 0%;
+padding-right: 21%;
+}
+
+.filet-de-boeuf-aux-herbes{
 flex-wrap: nowrap;
+width: 70%;
+padding: 0px 1%;
+transform-origin: left;
 }
 
 
+/* PARMENTIER DE QUEUE DE BOEUF*/
 
-
-/* section plat */
-
-/* COQUILLE SAINT JACQUES*/
-
-.div-coquilles-saint-jacques {
+.div-parmentier-de-queue-de-boeuf {
   position: relative;
+  height: 80px;
+  width: 100%;
+  margin-top: 15px;
+  display: flex;
+  align-items: center;
+  background-color: #fff;
+  border-radius: 15px;
+}
+
+.div-parmentier-de-queue-de-boeuf:hover .bouton-validation {
+  opacity: 1;
+  transform: scaleX(1.2);
+  transition-duration: 400ms;
+  transform-origin: right;
+  animation: 300ms 0ms linear ease-out;
+  cursor: pointer;
+}
+
+.div-parmentier-de-queue-de-boeuf:hover .p-titre-prix {
+animation: translation 400ms 0ms linear both;
+padding-left: 0%;
+padding-right: 21%;
+}
+
+
+.parmentier-de-queue-de-boeuf {
+flex-wrap: nowrap;
+width: 70%;
+padding: 0px 1%;
+transform-origin: left;
+}
+
+/* FILET DE TURBOT */
+
+
+.div-filet-de-turbot{
+position: relative;
   height: 80px;
   width: 100%;
   margin-top: 15px;
@@ -251,7 +322,7 @@ flex-wrap: nowrap;
   border-radius: 15px;
 }
 
-.div-coquilles-saint-jacques:hover .bouton-validation {
+.div-filet-de-turbot:hover .bouton-validation{
   opacity: 1;
   transform: scaleX(1.2);
   transition-duration: 400ms;
@@ -259,127 +330,131 @@ flex-wrap: nowrap;
   animation: 300ms 0ms linear ease-out;
   cursor: pointer;
 }
-
-
-.div-coquilles-saint-jacques:hover .p-titre-prix {
+.div-filet-de-turbot:hover .p-titre-prix{
   animation: translation 400ms 0ms linear both;
 padding-left: 0%;
 padding-right: 21%;
 }
 
-.coquilles-saint-jacques {
-  width: 70%;
+.filet-de-turbot{
+flex-wrap: nowrap;
+width: 70%;
 padding: 0px 1%;
 transform-origin: left;
-flex-wrap: nowrap;
-}
-
-
-
-/* Magret */
-
-.div-magret-de-canard {
-  position: relative;
-  height: 80px;
-  width: 100%;
-  margin-top: 15px;
-  display: flex;
-  align-items: center;
-  background-color: #fff;
-  border-radius: 15px;
-}
-
-.div-magret-de-canard:hover .bouton-validation {
-  opacity: 1;
-  transform: scaleX(1.2);
-  transition-duration: 400ms;
-  transform-origin: right;
-  animation-name: derouler;
-  animation: 300ms 0ms linear ease-out;
-  cursor: pointer;
-}
-
-.div-magret-de-canard:hover .p-titre-prix {
-  animation: translation 400ms 0ms linear both;
-padding-left: 0%;
-padding-right: 21%;
-}
-
-.magret-de-canard {
-  width: 70%;
-padding: 0px 1%;
-transform-origin: left;
-flex-wrap: nowrap;
-}
-
-
-
-/* pigeonneau */
-
-.div-pigeonneau-d-illes-et-vilaine {
-  position: relative;
-  height: 80px;
-  width: 100%;
-  margin-top: 15px;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  background-color: #fff;
-  border-radius: 15px;
-}
-
-.div-pigeonneau-d-illes-et-vilaine:hover
-  .bouton-validation {
-  opacity: 1;
-  transform: scaleX(1.2);
-  transition-duration: 400ms;
-  transform-origin: right;
-  animation-name: derouler;
-  animation: 300ms 0ms linear ease-out;
-  cursor: pointer;
-}
-
-.div-pigeonneau-d-illes-et-vilaine:hover .p-titre-prix {
-  animation: translation 400ms 0ms linear both;
-padding-left: 0%;
-padding-right: 21%;
-}
-
-.pigeonneau-d-illes-et-vilaine {
-  width: 70%;
-padding: 0px 1%;
-transform-origin: left;
-flex-wrap: nowrap;
 }
 
 
 /* DESSERT */
 
-.div-petales-de-violettes-glaces {
+
+/* PARIS-BREST */
+
+.div-paris-brest{
   position: relative;
   height: 80px;
   width: 100%;
   margin-top: 15px;
   display: flex;
+  flex-direction: row;
   align-items: center;
   background-color: #fff;
   border-radius: 15px;
 }
 
-.div-petales-de-violettes-glaces:hover .bouton-validation {
+
+.div-paris-brest:hover .bouton-validation {
+opacity: 1;
+  transform: scaleX(1.2);
+  transition-duration: 400ms;
+  transform-origin: right;
+  animation-name: derouler;
+  animation: 300ms 0ms linear ease-out;
+  cursor: pointer;
+}
+
+.div-paris-brest:hover .p-titre-prix {
+animation: translation 400ms 0ms linear both;
+padding-left: 0%;
+padding-right: 21%;
+}
+
+.paris-brest{
+flex-wrap: nowrap;
+width: 70%;
+padding: 0px 1%;
+transform-origin: left;
+}
+
+
+
+
+/* MACARON au chocolat d'exeption*/
+
+
+.div-macaron-au-chocolat-d-exeption{
+  position: relative;
+  height: 80px;
+  width: 100%;
+  margin-top: 15px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  background-color: #fff;
+  border-radius: 15px;
+}
+
+.div-macaron-au-chocolat-d-exeption:hover .bouton-validation{
+ opacity: 1;
+  transform: scaleX(1.2);
+  transition-duration: 400ms;
+  transform-origin: right;
+  animation-name: derouler;
+  animation: 300ms 0ms linear ease-out;
+  cursor: pointer;
+}
+.div-macaron-au-chocolat-d-exeption:hover .p-titre-prix{
+animation: translation 400ms 0ms linear both;
+padding-left: 0%;
+padding-right: 21%;
+}
+
+.macaron-au-chocolat-d-exeption{
+flex-wrap: nowrap;
+width: 70%;
+padding: 0px 1%;
+transform-origin: left;
+}
+
+/* MOUSSE AU CHOCOLAT */
+
+.div-mousse-au-chocolat{
+  position: relative;
+  height: 80px;
+  width: 100%;
+  margin-top: 15px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  background-color: #fff;
+  border-radius: 15px;
+}
+
+.div-mousse-au-chocolat:hover .bouton-validation {
   opacity: 1;
   transform: scaleX(1.2);
   transition-duration: 400ms;
   transform-origin: right;
+  animation-name: derouler;
   animation: 300ms 0ms linear ease-out;
   cursor: pointer;
 }
-.div-petales-de-violettes-glaces:hover .p-titre-prix {
-  animation: translation 400ms 0ms linear both;
+.div-mousse-au-chocolat:hover .p-titre-prix{
+   animation: translation 400ms 0ms linear both;
 padding-left: 0%;
 padding-right: 21%;
-} 
-.petales-de-violettes-glaces {
+ }
+
+.mousse-au-chocolat{
   flex-wrap: nowrap;
 width: 70%;
 padding: 0px 1%;
@@ -387,99 +462,25 @@ transform-origin: left;
 }
 
 
-/* FONDANT AU CHOCOLAT */
-
-.div-fondant-au-chocolat {
-  position: relative;
-  height: 80px;
-  width: 100%;
-  margin-top: 15px;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  background-color: #fff;
-  border-radius: 15px;
-}
-
-.div-fondant-au-chocolat:hover .bouton-validation {
-  opacity: 1;
-  transform: scaleX(1.2);
-  transition-duration: 400ms;
-  transform-origin: right;
-  animation-name: derouler;
-  animation: 300ms 0ms linear ease-out;
-  cursor: pointer;
-}
-.div-fondant-au-chocolat:hover .p-titre-prix {
-  animation: translation 400ms 0ms linear both;
-padding-left: 0%;
-padding-right: 21%;
-}
-
-.fondant-au-chocolat {
-  width: 70%;
-padding: 0px 1%;
-transform-origin: left;
-flex-wrap: nowrap;
-}
-
-
-
-
-/* Millefeuilles */
-
-.div-millefeuille-croustillant {
-  position: relative;
-  height: 80px;
-  width: 100%;
-  margin-top: 15px;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  background-color: #fff;
-  border-radius: 15px;
-}
-
-.div-millefeuille-croustillant:hover .bouton-validation {
-  opacity: 1;
-  transform: scaleX(1.2);
-  transition-duration: 400ms;
-  transform-origin: right;
-  animation-name: derouler;
-  animation: 300ms 0ms linear ease-out;
-  cursor: pointer;
-}
-.div-millefeuille-croustillant:hover .p-titre-prix {
-  animation: translation 400ms 0ms linear both;
-padding-left: 0%;
-padding-right: 21%;
-}
-.millefeuille-croustillant {
-  width: 70%;
-padding: 0px 1%;
-transform-origin: left;
-flex-wrap: nowrap;
-}
-
-
 
 /* bouton commander */
 
-.bouton-commander {
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI',
+.bouton-commander{
+  align-content: center;
+font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI',
     Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans',
     'Helvetica Neue', sans-serif;
   text-align: center;
 }
 
-.commander {
+.commander{
   background: rgb(255, 121, 218);
   background: linear-gradient(
     171deg,
     rgba(255, 121, 218, 1) 0%,
     rgba(147, 86, 220, 1) 100%
   );
-  width: 40%;
+  width: 35%;
 border: 2px;
 border-radius: 35px;
 height: 50px;
@@ -489,13 +490,12 @@ margin-bottom: 30px;
 margin-left: auto;
 box-shadow: #354146 3px 2px 5px;
 }
-
 .commander:hover{
   transform: scale(1.05);
   cursor:pointer;
 }
 
-.p-botton-commander {
+.p-botton-commander{
   color: white;
   margin: 40px auto;
   padding-top: 13px;
@@ -506,14 +506,16 @@ box-shadow: #354146 3px 2px 5px;
 /* FOOTER*/
 
 .div-footer {
-  position: relative;
-  height: auto;
-  top: 340px;
-  width: 100%;
-  background-color: #354146;
+position: relative;
+height: auto;
+top:340px;
+width: 100%;
+background-color: #354146;
 
-  
+
 }
+
+
 
 .logo-de-la-chaine-footer {
   margin-bottom: 10px;
@@ -525,6 +527,7 @@ box-shadow: #354146 3px 2px 5px;
 }
 
 .bloc-footer-image-1 {
+  
   display: flex;
   align-items: center;
   margin-left: 45%;
@@ -535,6 +538,7 @@ box-shadow: #354146 3px 2px 5px;
 }
 
 .p-couvert {
+  
   margin: 0px;
   margin-bottom: 10px;
   font-size: 13px;
@@ -583,7 +587,9 @@ box-shadow: #354146 3px 2px 5px;
   color: white;
 }
 
-footer {
+
+
+footer{
   width:100%;
   align-items: center;
 }
