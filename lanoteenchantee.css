@@ -13,24 +13,66 @@ html {
     'Helvetica Neue', sans-serif;
 }
 
+/* .spinner {
+  position: fixed;
+  z-index: 999;
+  overflow: show;
+  margin: auto;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  width: 50px;
+  height: 50px;
+   animation:opacity-inverse 600ms 6000ms linear both;
+  
+}
+.spinner:before{
+    
+  content: '';
+display: block;
+position: fixed;
+top: 0;
+left: 0;
+width: 100%;
+height: 100%;
+background-color: rgba(255,255,255,0.5);
+}
+
+
+.spinner:not(:required):after{
+  content: '';
+  display: block;
+  font-size: 10px;
+  width: 50px;
+  height: 50px;
+  margin-top: -0.5em;
+
+  border: 15px solid rgb(138, 0, 180);
+  border-radius: 100%;
+  border-bottom-color: transparent;
+  animation: spinner 1s linear 0s infinite;
+
+
+}  */
+
 body {
   width: 100%;
 }
 
 body > header:nth-child(1) {
- left: -74px;
+  left: -74px;
 }
 
-
 header {
-height: 100%;
-width: 100%;
-max-width: 845px;
-margin:auto;
-display: flex;
-align-items: center;
-justify-content: center;
-position: relative;
+  height: 100%;
+  width: 100%;
+  max-width: 845px;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
 }
 
 .photo-plat-restaurant-2 {
@@ -39,29 +81,26 @@ position: relative;
   object-fit: cover;
 }
 
-.bouton-de-retour{
+.bouton-de-retour {
   display: flex;
 }
 
-.logo-chaine-2 {
-display: block;
-height: 100%;
+.logo-chaine {
+  display: block;
 width: 100%;
 margin-bottom: 10px;
 margin-top: 10px;
+margin-left: 10px;
 }
 
 .fleche-retour {
-height: 2em;
-cursor: pointer;
 
-}
-
-.fleche-retour:hover{
   cursor: pointer;
-  
 }
 
+.fleche-retour:hover {
+  cursor: pointer;
+}
 
 button {
   background: none;
@@ -69,31 +108,31 @@ button {
 }
 
 .bouton-de-retour > button:nth-child(1) {
- margin-right: 20%;
- padding-left: 16%;
+  margin-right: 0%;
+padding-left: 0%;
+margin-left: 0px;
 }
 
-
-.titre-h1{
-height: 50px;
-width: 100%;
-display: flex;
-align-items: center;
-justify-content: space-between;
-}
-
-h1 {
-height: 100%;
-width: 80%;
-display: flex;
-align-items: center;
+.titre-h1 {
+  height: 50px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 
 h1 {
-width: 100%;
-font-size: 25px;
-margin-left: 15px;
-font-family: 'Shrikhand', cursive;
+  height: 100%;
+  width: 80%;
+  display: flex;
+  align-items: center;
+}
+
+h1 {
+  width: 100%;
+  font-size: 25px;
+  margin-left: 15px;
+  font-family: 'Shrikhand', cursive;
 }
 
 #ensemble-du-menu {
@@ -121,10 +160,14 @@ h3 {
   top: 150px;
   background-color: #e5e5e5;
   border-radius: 15px 15px 0px 0px;
+  animation: translation-bloc 200ms 1000ms linear both;
 }
 
 /* RAVIOLES DE FOIE GRAS*/
 
+.bloc-des-entrees{
+ animation: translation-bloc 2000ms 2500ms linear both;
+}
 .div-ravioles-de-foie-gras {
   position: relative;
   height: 80px;
@@ -136,7 +179,6 @@ h3 {
   border-radius: 15px;
 }
 .div-ravioles-de-foie-gras:hover .bouton-validation {
- 
   opacity: 1;
   transform: scaleX(1.2);
   transition-duration: 400ms;
@@ -146,19 +188,18 @@ h3 {
   cursor: pointer;
 }
 
-.div-ravioles-de-foie-gras:hover .p-titre-prix{
-animation: translation 400ms 0ms linear both;
-padding-left: 0%;
-padding-right: 21%;
+.div-ravioles-de-foie-gras:hover .p-titre-prix {
+  animation: translation 400ms 0ms linear both;
+  padding-left: 0%;
+  padding-right: 21%;
 }
 
-.ravioles-de-foie-gras{
-width: 70%;
-padding: 0px 1%;
-transform-origin: left;
-flex-wrap: nowrap;
+.ravioles-de-foie-gras {
+  width: 70%;
+  padding: 0px 1%;
+  transform-origin: left;
+  flex-wrap: nowrap;
 }
-
 
 /* CAVIAR OSCIETRE*/
 
@@ -183,18 +224,17 @@ flex-wrap: nowrap;
 }
 
 .div-caviar-oscietre:hover .p-titre-prix {
-animation: translation 300ms 0ms linear both;
-padding-left: 0%;
-padding-right: 21%;
+  animation: translation 300ms 0ms linear both;
+  padding-left: 0%;
+  padding-right: 21%;
 }
 
 .caviar-oscietre {
-width: 70%;
-padding: 0px 1%;
-transform-origin: left;
-flex-wrap: nowrap;
+  width: 70%;
+  padding: 0px 1%;
+  transform-origin: left;
+  flex-wrap: nowrap;
 }
-
 
 /* HOMARD ET ESPUMA DE POTIRON*/
 
@@ -220,24 +260,21 @@ flex-wrap: nowrap;
 }
 
 .div-homard-et-espuma-de-potiron:hover .p-titre-prix {
-animation: translation 400ms 0ms linear both;
-padding-left: 0%;
-padding-right: 21%;
+  animation: translation 400ms 0ms linear both;
+  padding-left: 0%;
+  padding-right: 21%;
 }
 
 .homard-et-espuma-de-potiron {
-flex-wrap: nowrap;
-width: 70%;
-padding: 0px 1%;
-transform-origin: left;
-
+  flex-wrap: nowrap;
+  width: 70%;
+  padding: 0px 1%;
+  transform-origin: left;
 }
-
 
 /* FOIE GRAS DE CANARD CUIT ENTIER*/
 
-
-.div-foie-gras-de-canard-cuit-entier{
+.div-foie-gras-de-canard-cuit-entier {
   position: relative;
   height: 80px;
   width: 100%;
@@ -248,8 +285,9 @@ transform-origin: left;
   border-radius: 15px;
 }
 
-.div-foie-gras-de-canard-cuit-entier:hover .bouton-validation {
-   opacity: 1;
+.div-foie-gras-de-canard-cuit-entier:hover
+  .bouton-validation {
+  opacity: 1;
   transform: scaleX(1.2);
   transition-duration: 400ms;
   transform-origin: right;
@@ -257,23 +295,24 @@ transform-origin: left;
   animation: 300ms 0ms linear ease-out;
   cursor: pointer;
 }
-.div-foie-gras-de-canard-cuit-entier:hover .p-titre-prix{
-animation: translation 400ms 0ms linear both;
-padding-left: 0%;
-padding-right: 21%;
+.div-foie-gras-de-canard-cuit-entier:hover .p-titre-prix {
+  animation: translation 400ms 0ms linear both;
+  padding-left: 0%;
+  padding-right: 21%;
 }
 
-.foie-gras-de-canard-cuit-entier{
+.foie-gras-de-canard-cuit-entier {
   flex-wrap: nowrap;
-width: 70%;
-padding: 0px 1%;
-transform-origin: left;
+  width: 70%;
+  padding: 0px 1%;
+  transform-origin: left;
 }
-
 
 /* SECTION PLAT */
 
-
+.section-plat{
+ animation: translation-bloc 2000ms 3500ms linear both; 
+}
 
 /* NOIX DE COQUILLE SAINT JACQUES*/
 
@@ -288,7 +327,8 @@ transform-origin: left;
   border-radius: 15px;
 }
 
-.div-noix-de-coquille-saint-jacques:hover .bouton-validation {
+.div-noix-de-coquille-saint-jacques:hover
+  .bouton-validation {
   opacity: 1;
   transform: scaleX(1.2);
   transition-duration: 400ms;
@@ -298,62 +338,21 @@ transform-origin: left;
 }
 
 .div-noix-de-coquille-saint-jacques:hover .p-titre-prix {
-animation: translation 400ms 0ms linear both;
-padding-left: 0%;
-padding-right: 21%;
+  animation: translation 400ms 0ms linear both;
+  padding-left: 0%;
+  padding-right: 21%;
 }
 
-
 .noix-de-coquille-saint-jacques {
-flex-wrap: nowrap;
-width: 70%;
-padding: 0px 1%;
-transform-origin: left;
+  flex-wrap: nowrap;
+  width: 70%;
+  padding: 0px 1%;
+  transform-origin: left;
 }
 
 /* LANGOUSTINE */
 
-
-.div-langoustine-poelee{
-position: relative;
-  height: 80px;
-  width: 100%;
-  margin-top: 15px;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  background-color: #fff;
-  border-radius: 15px;
-}
-
-.div-langoustine-poelee:hover .bouton-validation{
-  opacity: 1;
-  transform: scaleX(1.2);
-  transition-duration: 400ms;
-  transform-origin: right;
-  animation: 300ms 0ms linear ease-out;
-  cursor: pointer;
-}
-.div-langoustine-poelee:hover .p-titre-prix{
-  animation: translation 400ms 0ms linear both;
-padding-left: 0%;
-padding-right: 21%;
-}
-
-.langoustine-poelee{
-flex-wrap: nowrap;
-width: 70%;
-padding: 0px 1%;
-transform-origin: left;
-}
-
-
-
-
-
-/* MIJOTE */
-
-.div-mijote-de-queue-de-boeuf{
+.div-langoustine-poelee {
   position: relative;
   height: 80px;
   width: 100%;
@@ -365,9 +364,43 @@ transform-origin: left;
   border-radius: 15px;
 }
 
+.div-langoustine-poelee:hover .bouton-validation {
+  opacity: 1;
+  transform: scaleX(1.2);
+  transition-duration: 400ms;
+  transform-origin: right;
+  animation: 300ms 0ms linear ease-out;
+  cursor: pointer;
+}
+.div-langoustine-poelee:hover .p-titre-prix {
+  animation: translation 400ms 0ms linear both;
+  padding-left: 0%;
+  padding-right: 21%;
+}
+
+.langoustine-poelee {
+  flex-wrap: nowrap;
+  width: 70%;
+  padding: 0px 1%;
+  transform-origin: left;
+}
+
+/* MIJOTE */
+
+.div-mijote-de-queue-de-boeuf {
+  position: relative;
+  height: 80px;
+  width: 100%;
+  margin-top: 15px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  background-color: #fff;
+  border-radius: 15px;
+}
 
 .div-mijote-de-queue-de-boeuf:hover .bouton-validation {
-opacity: 1;
+  opacity: 1;
   transform: scaleX(1.2);
   transition-duration: 400ms;
   transform-origin: right;
@@ -377,25 +410,27 @@ opacity: 1;
 }
 
 .div-mijote-de-queue-de-boeuf:hover .p-titre-prix {
-animation: translation 400ms 0ms linear both;
-padding-left: 0%;
-padding-right: 21%;
+  animation: translation 400ms 0ms linear both;
+  padding-left: 0%;
+  padding-right: 21%;
 }
 
 .mijote-de-queue-de-boeuf {
-flex-wrap: nowrap;
-width: 70%;
-padding: 0px 1%;
-transform-origin: left;
+  flex-wrap: nowrap;
+  width: 70%;
+  padding: 0px 1%;
+  transform-origin: left;
 }
-
 
 /* DESSERT */
 
+.dessert{
+  animation: translation-bloc 2000ms 4500ms linear both;
+}
+
 /* MACARON*/
 
-
-.div-macaron-noisette-et-chocolat{
+.div-macaron-noisette-et-chocolat {
   position: relative;
   height: 80px;
   width: 100%;
@@ -407,8 +442,8 @@ transform-origin: left;
   border-radius: 15px;
 }
 
-.div-macaron-noisette-et-chocolat:hover .bouton-validation{
- opacity: 1;
+.div-macaron-noisette-et-chocolat:hover .bouton-validation {
+  opacity: 1;
   transform: scaleX(1.2);
   transition-duration: 400ms;
   transform-origin: right;
@@ -416,22 +451,22 @@ transform-origin: left;
   animation: 300ms 0ms linear ease-out;
   cursor: pointer;
 }
-.div-macaron-noisette-et-chocolat:hover .p-titre-prix{
-animation: translation 400ms 0ms linear both;
-padding-left: 0%;
-padding-right: 21%;
+.div-macaron-noisette-et-chocolat:hover .p-titre-prix {
+  animation: translation 400ms 0ms linear both;
+  padding-left: 0%;
+  padding-right: 21%;
 }
 
-.macaron-noisette-et-chocolat{
-flex-wrap: nowrap;
-width: 70%;
-padding: 0px 1%;
-transform-origin: left;
+.macaron-noisette-et-chocolat {
+  flex-wrap: nowrap;
+  width: 70%;
+  padding: 0px 1%;
+  transform-origin: left;
 }
 
 /* BABA */
 
-.div-baba-au-rhum-revisite{
+.div-baba-au-rhum-revisite {
   position: relative;
   height: 80px;
   width: 100%;
@@ -452,23 +487,22 @@ transform-origin: left;
   animation: 300ms 0ms linear ease-out;
   cursor: pointer;
 }
-.div-baba-au-rhum-revisite:hover .p-titre-prix{
-   animation: translation 400ms 0ms linear both;
-padding-left: 0%;
-padding-right: 21%;
- }
-
-.baba-au-rhum-revisite{
-  flex-wrap: nowrap;
-width: 70%;
-padding: 0px 1%;
-transform-origin: left;
+.div-baba-au-rhum-revisite:hover .p-titre-prix {
+  animation: translation 400ms 0ms linear both;
+  padding-left: 0%;
+  padding-right: 21%;
 }
 
+.baba-au-rhum-revisite {
+  flex-wrap: nowrap;
+  width: 70%;
+  padding: 0px 1%;
+  transform-origin: left;
+}
 
- /* MILLEFEUILLES */
+/* MILLEFEUILLES */
 
-.div-tarte-au-citron-meringuee{
+.div-tarte-au-citron-meringuee {
   position: relative;
   height: 80px;
   width: 100%;
@@ -489,32 +523,30 @@ transform-origin: left;
   animation: 300ms 0ms linear ease-out;
   cursor: pointer;
 }
-.div-tarte-au-citron-meringuee:hover .p-titre-prix{
-   animation: translation 400ms 0ms linear both;
-padding-left: 0%;
-padding-right: 21%;
+.div-tarte-au-citron-meringuee:hover .p-titre-prix {
+  animation: translation 400ms 0ms linear both;
+  padding-left: 0%;
+  padding-right: 21%;
 }
 
-.tarte-au-citron-meringuee{
+.tarte-au-citron-meringuee {
   flex-wrap: nowrap;
-width: 70%;
-padding: 0px 1%;
-transform-origin: left;
+  width: 70%;
+  padding: 0px 1%;
+  transform-origin: left;
 }
-
-
 
 /* bouton commander */
 
-.bouton-commander{
+.bouton-commander {
   align-content: center;
-font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI',
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI',
     Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans',
     'Helvetica Neue', sans-serif;
   text-align: center;
 }
 
-.commander{
+.commander {
   background: rgb(255, 121, 218);
   background: linear-gradient(
     171deg,
@@ -522,21 +554,21 @@ font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI',
     rgba(147, 86, 220, 1) 100%
   );
   width: 35%;
-border: 2px;
-border-radius: 35px;
-height: 50px;
-margin-top: 30px;
-margin-right: auto;
-margin-bottom: 30px;
-margin-left: auto;
-box-shadow: #354146 3px 2px 5px;
+  border: 2px;
+  border-radius: 35px;
+  height: 50px;
+  margin-top: 30px;
+  margin-right: auto;
+  margin-bottom: 30px;
+  margin-left: auto;
+  box-shadow: #354146 3px 2px 5px;
 }
-.commander:hover{
+.commander:hover {
   transform: scale(1.05);
-  cursor:pointer;
+  cursor: pointer;
 }
 
-.p-botton-commander{
+.p-botton-commander {
   color: white;
   margin: 40px auto;
   padding-top: 13px;
@@ -547,16 +579,12 @@ box-shadow: #354146 3px 2px 5px;
 /* FOOTER*/
 
 .div-footer {
-position: relative;
-height: auto;
-top:340px;
-width: 100%;
-background-color: #354146;
-
-
+  position: relative;
+  height: auto;
+  top: 340px;
+  width: 100%;
+  background-color: #354146;
 }
-
-
 
 .logo-de-la-chaine-footer {
   margin-bottom: 10px;
@@ -568,7 +596,6 @@ background-color: #354146;
 }
 
 .bloc-footer-image-1 {
-  
   display: flex;
   align-items: center;
   margin-left: 45%;
@@ -579,7 +606,6 @@ background-color: #354146;
 }
 
 .p-couvert {
-  
   margin: 0px;
   margin-bottom: 10px;
   font-size: 13px;
@@ -628,9 +654,7 @@ background-color: #354146;
   color: white;
 }
 
-
-
-footer{
-  width:100%;
+footer {
+  width: 100%;
   align-items: center;
 }

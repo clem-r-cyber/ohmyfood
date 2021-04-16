@@ -13,24 +13,66 @@ html {
     'Helvetica Neue', sans-serif;
 }
 
+/* .spinner {
+  position: fixed;
+  z-index: 999;
+  overflow: show;
+  margin: auto;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  width: 50px;
+  height: 50px;
+   animation:opacity-inverse 600ms 6000ms linear both;
+  
+}
+.spinner:before{
+    
+  content: '';
+display: block;
+position: fixed;
+top: 0;
+left: 0;
+width: 100%;
+height: 100%;
+background-color: rgba(255,255,255,0.5);
+}
+
+
+.spinner:not(:required):after{
+  content: '';
+  display: block;
+  font-size: 10px;
+  width: 50px;
+  height: 50px;
+  margin-top: -0.5em;
+
+  border: 15px solid rgb(138, 0, 180);
+  border-radius: 100%;
+  border-bottom-color: transparent;
+  animation: spinner 1s linear 0s infinite;
+
+
+}  */
+
 body {
   width: 100%;
 }
 
 body > header:nth-child(1) {
- left: -74px;
+  left: -74px;
 }
 
-
 header {
-height: 100%;
-width: 100%;
-max-width: 845px;
-margin:auto;
-display: flex;
-align-items: center;
-justify-content: center;
-position: relative;
+  height: 100%;
+  width: 100%;
+  max-width: 845px;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
 }
 
 .photo-plat-restaurant-4 {
@@ -39,29 +81,27 @@ position: relative;
   object-fit: cover;
 }
 
-.bouton-de-retour{
+.bouton-de-retour {
   display: flex;
 }
 
 .logo-chaine-2 {
-display: block;
-height: 100%;
-width: 100%;
-margin-bottom: 10px;
-margin-top: 10px;
+  display: block;
+  height: 100%;
+  width: 100%;
+  margin-bottom: 10px;
+  margin-top: 10px;
+  margin-left: 10px;
 }
 
 .fleche-retour {
-height: 2em;
-cursor: pointer;
-
-}
-
-.fleche-retour:hover{
+  height: 2em;
   cursor: pointer;
-  
 }
 
+.fleche-retour:hover {
+  cursor: pointer;
+}
 
 button {
   background: none;
@@ -69,31 +109,30 @@ button {
 }
 
 .bouton-de-retour > button:nth-child(1) {
- margin-right: 20%;
- padding-left: 16%;
+  margin-right: 20%;
+  padding-left: 16%;
 }
 
-
-.titre-h1{
-height: 50px;
-width: 100%;
-display: flex;
-align-items: center;
-justify-content: space-between;
-}
-
-h1 {
-height: 100%;
-width: 80%;
-display: flex;
-align-items: center;
+.titre-h1 {
+  height: 50px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 
 h1 {
-width: 100%;
-font-size: 25px;
-margin-left: 15px;
-font-family: 'Shrikhand', cursive;
+  height: 100%;
+  width: 80%;
+  display: flex;
+  align-items: center;
+}
+
+h1 {
+  width: 100%;
+  font-size: 25px;
+  margin-left: 15px;
+  font-family: 'Shrikhand', cursive;
 }
 
 #ensemble-du-menu {
@@ -125,7 +164,7 @@ h3 {
 
 /*TARTARE DE THON */
 
-.div-tartare-de-thon{
+.div-tartare-de-thon {
   position: relative;
   height: 80px;
   width: 100%;
@@ -136,7 +175,6 @@ h3 {
   border-radius: 15px;
 }
 .div-tartare-de-thon:hover .bouton-validation {
- 
   opacity: 1;
   transform: scaleX(1.2);
   transition-duration: 400ms;
@@ -146,19 +184,18 @@ h3 {
   cursor: pointer;
 }
 
-.div-tartare-de-thon:hover .p-titre-prix{
-animation: translation 400ms 0ms linear both;
-padding-left: 0%;
-padding-right: 21%;
+.div-tartare-de-thon:hover .p-titre-prix {
+  animation: translation 400ms 0ms linear both;
+  padding-left: 0%;
+  padding-right: 21%;
 }
 
-.tartare-de-thon{
-width: 70%;
-padding: 0px 1%;
-transform-origin: left;
-flex-wrap: nowrap;
+.tartare-de-thon {
+  width: 70%;
+  padding: 0px 1%;
+  transform-origin: left;
+  flex-wrap: nowrap;
 }
-
 
 /* BOUCHEE D'HOMARD CROUSTILLANT*/
 
@@ -173,7 +210,8 @@ flex-wrap: nowrap;
   border-radius: 15px;
 }
 
-.div-bouchee-d-homard-croustillant:hover .bouton-validation {
+.div-bouchee-d-homard-croustillant:hover
+  .bouton-validation {
   opacity: 1;
   transform: scaleX(1.2);
   transform-origin: right;
@@ -183,18 +221,17 @@ flex-wrap: nowrap;
 }
 
 .div-bouchee-d-homard-croustillant:hover .p-titre-prix {
-animation: translation 300ms 0ms linear both;
-padding-left: 0%;
-padding-right: 21%;
+  animation: translation 300ms 0ms linear both;
+  padding-left: 0%;
+  padding-right: 21%;
 }
 
-.bouchee-d-homard-croustillant{
-width: 70%;
-padding: 0px 1%;
-transform-origin: left;
-flex-wrap: nowrap;
+.bouchee-d-homard-croustillant {
+  width: 70%;
+  padding: 0px 1%;
+  transform-origin: left;
+  flex-wrap: nowrap;
 }
-
 
 /* VELOUTE DE CEPES*/
 
@@ -220,24 +257,22 @@ flex-wrap: nowrap;
 }
 
 .div-veloute-de-cepes:hover .p-titre-prix {
-animation: translation 400ms 0ms linear both;
-padding-left: 0%;
-padding-right: 21%;
+  animation: translation 400ms 0ms linear both;
+  padding-left: 0%;
+  padding-right: 21%;
 }
 
 .veloute-de-cepes {
-flex-wrap: nowrap;
-width: 70%;
-padding: 0px 1%;
-transform-origin: left;
-
+  flex-wrap: nowrap;
+  width: 70%;
+  padding: 0px 1%;
+  transform-origin: left;
 }
 /* SECTION PLAT */
 
 /* POULET ROTIE AUX HERBES DE PROVENCE*/
 
-
-.div-poulet-roti-aux-herbes-de-provence{
+.div-poulet-roti-aux-herbes-de-provence {
   position: relative;
   height: 80px;
   width: 100%;
@@ -248,7 +283,8 @@ transform-origin: left;
   border-radius: 15px;
 }
 
-.div-poulet-roti-aux-herbes-de-provence:hover .bouton-validation {
+.div-poulet-roti-aux-herbes-de-provence:hover
+  .bouton-validation {
   opacity: 1;
   transform: scaleX(1.2);
   transition-duration: 400ms;
@@ -257,19 +293,19 @@ transform-origin: left;
   animation: 300ms 0ms linear ease-out;
   cursor: pointer;
 }
-.div-poulet-roti-aux-herbes-de-provence:hover .p-titre-prix{
-animation: translation 400ms 0ms linear both;
-padding-left: 0%;
-padding-right: 21%;
+.div-poulet-roti-aux-herbes-de-provence:hover
+  .p-titre-prix {
+  animation: translation 400ms 0ms linear both;
+  padding-left: 0%;
+  padding-right: 21%;
 }
 
-.poulet-roti-aux-herbes-de-provence{
-flex-wrap: nowrap;
-width: 70%;
-padding: 0px 1%;
-transform-origin: left;
+.poulet-roti-aux-herbes-de-provence {
+  flex-wrap: nowrap;
+  width: 70%;
+  padding: 0px 1%;
+  transform-origin: left;
 }
-
 
 /* LANGOUSTINE ROTIE*/
 
@@ -294,62 +330,21 @@ transform-origin: left;
 }
 
 .div-langoustine-rotie:hover .p-titre-prix {
-animation: translation 400ms 0ms linear both;
-padding-left: 0%;
-padding-right: 21%;
+  animation: translation 400ms 0ms linear both;
+  padding-left: 0%;
+  padding-right: 21%;
 }
 
-
-.langoustine-rotie{
-flex-wrap: nowrap;
-width: 70%;
-padding: 0px 1%;
-transform-origin: left;
+.langoustine-rotie {
+  flex-wrap: nowrap;
+  width: 70%;
+  padding: 0px 1%;
+  transform-origin: left;
 }
 
 /* COTES DE BOEUF ANGUS */
 
-
-.div-cote-de-boeuf-angus{
-position: relative;
-  height: 80px;
-  width: 100%;
-  margin-top: 15px;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  background-color: #fff;
-  border-radius: 15px;
-}
-
-.div-cote-de-boeuf-angus:hover .bouton-validation{
-  opacity: 1;
-  transform: scaleX(1.2);
-  transition-duration: 400ms;
-  transform-origin: right;
-  animation: 300ms 0ms linear ease-out;
-  cursor: pointer;
-}
-.div-cote-de-boeuf-angus:hover .p-titre-prix{
-  animation: translation 400ms 0ms linear both;
-padding-left: 0%;
-padding-right: 21%;
-}
-
-.cote-de-boeuf-angus{
-flex-wrap: nowrap;
-width: 70%;
-padding: 0px 1%;
-transform-origin: left;
-}
-
-
-/* DESSERT */
-
-
-/* FARANDOLE DE DESSERTS */
-
-.div-farandole-de-desserts{
+.div-cote-de-boeuf-angus {
   position: relative;
   height: 80px;
   width: 100%;
@@ -361,9 +356,45 @@ transform-origin: left;
   border-radius: 15px;
 }
 
+.div-cote-de-boeuf-angus:hover .bouton-validation {
+  opacity: 1;
+  transform: scaleX(1.2);
+  transition-duration: 400ms;
+  transform-origin: right;
+  animation: 300ms 0ms linear ease-out;
+  cursor: pointer;
+}
+.div-cote-de-boeuf-angus:hover .p-titre-prix {
+  animation: translation 400ms 0ms linear both;
+  padding-left: 0%;
+  padding-right: 21%;
+}
+
+.cote-de-boeuf-angus {
+  flex-wrap: nowrap;
+  width: 70%;
+  padding: 0px 1%;
+  transform-origin: left;
+}
+
+/* DESSERT */
+
+/* FARANDOLE DE DESSERTS */
+
+.div-farandole-de-desserts {
+  position: relative;
+  height: 80px;
+  width: 100%;
+  margin-top: 15px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  background-color: #fff;
+  border-radius: 15px;
+}
 
 .div-farandole-de-desserts:hover .bouton-validation {
-opacity: 1;
+  opacity: 1;
   transform: scaleX(1.2);
   transition-duration: 400ms;
   transform-origin: right;
@@ -373,25 +404,21 @@ opacity: 1;
 }
 
 .div-farandole-de-desserts:hover .p-titre-prix {
-animation: translation 400ms 0ms linear both;
-padding-left: 0%;
-padding-right: 21%;
+  animation: translation 400ms 0ms linear both;
+  padding-left: 0%;
+  padding-right: 21%;
 }
 
-.farandole-de-desserts{
-flex-wrap: nowrap;
-width: 70%;
-padding: 0px 1%;
-transform-origin: left;
+.farandole-de-desserts {
+  flex-wrap: nowrap;
+  width: 70%;
+  padding: 0px 1%;
+  transform-origin: left;
 }
-
-
-
 
 /* CREME BRULEE*/
 
-
-.div-creme-brulee{
+.div-creme-brulee {
   position: relative;
   height: 80px;
   width: 100%;
@@ -403,8 +430,8 @@ transform-origin: left;
   border-radius: 15px;
 }
 
-.div-creme-brulee:hover .bouton-validation{
- opacity: 1;
+.div-creme-brulee:hover .bouton-validation {
+  opacity: 1;
   transform: scaleX(1.2);
   transition-duration: 400ms;
   transform-origin: right;
@@ -412,22 +439,22 @@ transform-origin: left;
   animation: 300ms 0ms linear ease-out;
   cursor: pointer;
 }
-.div-creme-brulee:hover .p-titre-prix{
-animation: translation 400ms 0ms linear both;
-padding-left: 0%;
-padding-right: 21%;
+.div-creme-brulee:hover .p-titre-prix {
+  animation: translation 400ms 0ms linear both;
+  padding-left: 0%;
+  padding-right: 21%;
 }
 
-.creme-brulee{
-flex-wrap: nowrap;
-width: 70%;
-padding: 0px 1%;
-transform-origin: left;
+.creme-brulee {
+  flex-wrap: nowrap;
+  width: 70%;
+  padding: 0px 1%;
+  transform-origin: left;
 }
 
 /* TIRAMISU */
 
-.div-tiramisu{
+.div-tiramisu {
   position: relative;
   height: 80px;
   width: 100%;
@@ -448,31 +475,30 @@ transform-origin: left;
   animation: 300ms 0ms linear ease-out;
   cursor: pointer;
 }
-.div-tiramisu:hover .p-titre-prix{
-   animation: translation 400ms 0ms linear both;
-padding-left: 0%;
-padding-right: 21%;
- }
-
-.tiramisu{
-  flex-wrap: nowrap;
-width: 70%;
-padding: 0px 1%;
-transform-origin: left;
+.div-tiramisu:hover .p-titre-prix {
+  animation: translation 400ms 0ms linear both;
+  padding-left: 0%;
+  padding-right: 21%;
 }
 
+.tiramisu {
+  flex-wrap: nowrap;
+  width: 70%;
+  padding: 0px 1%;
+  transform-origin: left;
+}
 
 /* bouton commander */
 
-.bouton-commander{
+.bouton-commander {
   align-content: center;
-font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI',
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI',
     Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans',
     'Helvetica Neue', sans-serif;
   text-align: center;
 }
 
-.commander{
+.commander {
   background: rgb(255, 121, 218);
   background: linear-gradient(
     171deg,
@@ -480,21 +506,21 @@ font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI',
     rgba(147, 86, 220, 1) 100%
   );
   width: 35%;
-border: 2px;
-border-radius: 35px;
-height: 50px;
-margin-top: 30px;
-margin-right: auto;
-margin-bottom: 30px;
-margin-left: auto;
-box-shadow: #354146 3px 2px 5px;
+  border: 2px;
+  border-radius: 35px;
+  height: 50px;
+  margin-top: 30px;
+  margin-right: auto;
+  margin-bottom: 30px;
+  margin-left: auto;
+  box-shadow: #354146 3px 2px 5px;
 }
-.commander:hover{
+.commander:hover {
   transform: scale(1.05);
-  cursor:pointer;
+  cursor: pointer;
 }
 
-.p-botton-commander{
+.p-botton-commander {
   color: white;
   margin: 40px auto;
   padding-top: 13px;
@@ -505,16 +531,12 @@ box-shadow: #354146 3px 2px 5px;
 /* FOOTER*/
 
 .div-footer {
-position: relative;
-height: auto;
-top:340px;
-width: 100%;
-background-color: #354146;
-
-
+  position: relative;
+  height: auto;
+  top: 340px;
+  width: 100%;
+  background-color: #354146;
 }
-
-
 
 .logo-de-la-chaine-footer {
   margin-bottom: 10px;
@@ -526,7 +548,6 @@ background-color: #354146;
 }
 
 .bloc-footer-image-1 {
-  
   display: flex;
   align-items: center;
   margin-left: 45%;
@@ -537,7 +558,6 @@ background-color: #354146;
 }
 
 .p-couvert {
-  
   margin: 0px;
   margin-bottom: 10px;
   font-size: 13px;
@@ -586,9 +606,7 @@ background-color: #354146;
   color: white;
 }
 
-
-
-footer{
-  width:100%;
+footer {
+  width: 100%;
   align-items: center;
 }
