@@ -85,9 +85,8 @@ header {
   display: flex;
 }
 
-.logo-chaine-2 {
+.logo-chaine{
   display: block;
-  height: 100%;
   width: 100%;
   margin-bottom: 10px;
   margin-top: 10px;
@@ -95,7 +94,6 @@ header {
 }
 
 .fleche-retour {
-  height: 2em;
   cursor: pointer;
 }
 
@@ -109,8 +107,9 @@ button {
 }
 
 .bouton-de-retour > button:nth-child(1) {
-  margin-right: 20%;
-  padding-left: 16%;
+  margin-right: 0%;
+padding-left: 0%;
+margin-left: 0px;
 }
 
 .titre-h1 {
@@ -163,6 +162,10 @@ h3 {
 }
 
 /*TARTARE DE THON */
+
+.bloc-des-entrees{
+ animation: translation-bloc 2000ms 2500ms linear both;
+}
 
 .div-tartare-de-thon {
   position: relative;
@@ -269,6 +272,9 @@ h3 {
   transform-origin: left;
 }
 /* SECTION PLAT */
+.section-plat{
+ animation: translation-bloc 2000ms 3500ms linear both; 
+}
 
 /* POULET ROTIE AUX HERBES DE PROVENCE*/
 
@@ -378,6 +384,9 @@ h3 {
 }
 
 /* DESSERT */
+.dessert{
+  animation: translation-bloc 2000ms 4500ms linear both;
+}
 
 /* FARANDOLE DE DESSERTS */
 
