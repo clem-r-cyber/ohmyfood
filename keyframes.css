@@ -25,22 +25,15 @@ opacity: 1;
 }
 
 @keyframes opacity {
-  0% {
-    opacity: 0;
+  0%,99% {
+    transform: scale(1);
   }
   100% {
-    opacity: 1;
+    transform: scale(0);
   }
 }
 
-@keyframes opacity-inverse {
-  0% {
-    opacity: 1;
-  }
-  100% {
-    opacity: 0;
-  }
-}
+
 
 @keyframes translation {
   0% {
@@ -52,12 +45,18 @@ opacity: 1;
 }
 @keyframes spinner {
   0% {
+  
     transform: rotate(0deg);
   }
   100% {
+    
+    
     transform: rotate(360deg);
   }
+
+
 }
+
 /* GENERIQUE */
 
 .bouton-validation {
