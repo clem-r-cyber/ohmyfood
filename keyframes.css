@@ -1,3 +1,99 @@
+
+@media screen and (min-width:750px){
+  .ensemble-nav {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .bloc-restauration{
+    display: flex ;
+    
+  }
+
+  .div-article-restauration{
+    display: flex ;
+    flex-direction: wrap;
+  } 
+    /*FOOTER*/
+
+.logo-de-la-chaine-footer {
+  margin-bottom: 10px;
+  font-family: 'Shrikhand', cursive;
+  font-size: 20px;
+  width: 25%;
+  color: white;
+  margin-left: 45%;
+}
+
+.bloc-footer-image-1 {
+  display: flex;
+  align-items: center;
+  margin-left: 45%;
+}
+
+.couvert-footer {
+  margin-top: -7px;
+}
+
+.p-couvert {
+  margin: 0px;
+  margin-bottom: 10px;
+  font-size: 13px;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI',
+    Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans',
+    'Helvetica Neue', sans-serif;
+  margin-left: 15px;
+  color: white;
+}
+
+.bloc-footer-image-2 {
+  display: flex;
+  align-items: center;
+  margin-left: 45%;
+}
+
+.p-poignet-de-mains {
+  text-align: center;
+  margin: 0px;
+  font-size: 13px;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI',
+    Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans',
+    'Helvetica Neue', sans-serif;
+  margin-left: 15px;
+  color: white;
+}
+
+.mention {
+  margin-top: 5px;
+  margin-left: 45%;
+  margin-bottom: 0px;
+  font-size: 13px;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI',
+    Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans',
+    'Helvetica Neue', sans-serif;
+  color: white;
+}
+
+.contact {
+  margin-top: 5px;
+  margin-left: 45%;
+  font-size: 13px;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI',
+    Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans',
+    'Helvetica Neue', sans-serif;
+  color: white;
+}
+
+footer {
+  width: 100%;
+  align-items: center;
+}
+    
+  }
+
+
+
+
 @keyframes derouler {
   0% {
     transform: scaleX(0);
@@ -33,7 +129,17 @@ opacity: 1;
   }
 }
 
-
+@keyframes opacity-coeur{
+  0% {
+    opacity: 0;
+  }
+  50%{
+    opacity: 0.5;
+  }
+  100%{
+    opacity: 1;
+  }
+}
 
 @keyframes translation {
   0% {
@@ -58,7 +164,9 @@ opacity: 1;
 }
 
 /* GENERIQUE */
-
+*{
+  object-fit:cover;
+}
 .bouton-validation {
   position: absolute;
   height: 80px;
@@ -75,17 +183,17 @@ opacity: 1;
   border-radius: 0px 14px 14px 0px;
   font-size: 18px;
   opacity: 0;
-  animation: derouler 200ms 0ms linear both;
+  animation: derouler 2000ms 0ms linear both;
 }
 
 .validation {
-  height: 12px;
+  height: 18px;
   transform: rotate(360deg);
-  transition: transform 0ms 0ms linear both;
+ 
 }
 
 h4{
- 
+
   display: block;
 font-size: 1.17em;
 font-weight: bold;
@@ -94,7 +202,7 @@ margin-block-end: 1em;
 }
 
 
-h4.p-titre{
+.section-entrees, h4.p-titre{
   font-size: 1em;
 overflow: hidden; 
 text-overflow: ellipsis;
@@ -105,11 +213,21 @@ flex-shrink: 0;
  margin-left: 10px;
 }
 
+h3 {
+  font-size: 15px;
+  width: 60px;
+  margin-left: 15px;
+  border-bottom: 3px solid #99e2d0;
+}
+
+
 h4.p-titre-prix{
+
 font-size: 0.8em;
 width: 30%;
 padding-left: 20%;
 padding-right: 2%;
+margin-top:34px;
 text-align: center;
 }
 
@@ -121,4 +239,20 @@ text-overflow: ellipsis;
 margin-top: 0px;
 margin-bottom: 0px;
 margin-left: 10px;
+}
+
+.h5:hover{
+white-space: nowrap;
+overflow: hidden;
+text-overflow: ellipsis;
+}
+
+.coeur-violet-1 {
+  display: none;
+  margin-left: -27.5px;
+  animation: opacity-coeur 800ms 0ms linear both
+}
+
+.activation-effet-1:hover .coeur-violet-1{
+  display: inline;
 }

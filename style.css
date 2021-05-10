@@ -453,6 +453,7 @@ justify-content: space-between;
 .coeur-violet-1 {
   display: none;
   margin-left: -22px;
+  animation: opacity-coeur 1000ms 0ms linear both
 }
 
 .activation-effet-1 {
@@ -528,6 +529,7 @@ justify-content: space-between;
 .coeur-violet-2 {
   margin-left: -21px;
   display: none;
+  animation: opacity-coeur 1000ms 0ms linear both
 }
 
 .activation-effet-2 {
@@ -580,6 +582,7 @@ justify-content: space-between;
 .coeur-violet-3 {
   margin-left: -21px;
   display: none;
+  animation: opacity-coeur 1000ms 0ms linear both
 }
 .activation-effet-3 {
   height: 39px;
@@ -632,6 +635,7 @@ justify-content: space-between;
 .coeur-violet-4 {
   margin-left: -21px;
   display: none;
+  animation: opacity-coeur 1000ms 0ms linear both
 }
 
 .activation-effet-4 {
