@@ -85,9 +85,9 @@ header {
   display: flex;
 }
 
-.logo-chaine{
+.logo-chaine {
   display: block;
-  width: 100%;
+  width: 90%;
   margin-bottom: 10px;
   margin-top: 10px;
   margin-left: 10px;
@@ -108,8 +108,8 @@ button {
 
 .bouton-de-retour > button:nth-child(1) {
   margin-right: 0%;
-padding-left: 0%;
-margin-left: 0px;
+  padding-left: 0%;
+  margin-left: 0px;
 }
 
 .titre-h1 {
@@ -140,6 +140,12 @@ h1 {
   background: coral;
 }
 
+.coeur-violet-1 {
+  display: none;
+  margin-left: -27.5px;
+  animation: opacity-coeur 800ms 0ms linear both;
+}
+
 h3 {
   font-size: 15px;
   width: 60px;
@@ -163,8 +169,8 @@ h3 {
 
 /*TARTARE DE THON */
 
-.bloc-des-entrees{
- animation: translation-bloc 2000ms 2500ms linear both;
+.bloc-des-entrees {
+  animation: translation-bloc 2000ms 2500ms linear both;
 }
 
 .div-tartare-de-thon {
@@ -272,8 +278,8 @@ h3 {
   transform-origin: left;
 }
 /* SECTION PLAT */
-.section-plat{
- animation: translation-bloc 2000ms 3500ms linear both; 
+.section-plat {
+  animation: translation-bloc 2000ms 3500ms linear both;
 }
 
 /* POULET ROTIE AUX HERBES DE PROVENCE*/
@@ -384,7 +390,7 @@ h3 {
 }
 
 /* DESSERT */
-.dessert{
+.dessert {
   animation: translation-bloc 2000ms 4500ms linear both;
 }
 
@@ -553,13 +559,13 @@ h3 {
   font-size: 20px;
   width: 100%;
   color: white;
-  margin-left: 45%;
+  margin-left: 3%;
 }
 
 .bloc-footer-image-1 {
   display: flex;
   align-items: center;
-  margin-left: 45%;
+  margin-left: 3%;
 }
 
 .couvert-footer {
@@ -580,7 +586,7 @@ h3 {
 .bloc-footer-image-2 {
   display: flex;
   align-items: center;
-  margin-left: 45%;
+  margin-left: 3%;
 }
 
 .p-poignet-de-mains {
@@ -596,7 +602,7 @@ h3 {
 
 .mention {
   margin-top: 5px;
-  margin-left: 45%;
+  margin-left: 3%;
   margin-bottom: 0px;
   font-size: 13px;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI',
@@ -607,7 +613,7 @@ h3 {
 
 .contact {
   margin-top: 5px;
-  margin-left: 45%;
+  margin-left: 3%;
   font-size: 13px;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI',
     Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans',

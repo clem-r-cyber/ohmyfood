@@ -13,7 +13,6 @@ html {
     'Helvetica Neue', sans-serif;
 }
 
-
 /* .spinner {
   position: fixed;
   z-index: 999;
@@ -108,9 +107,9 @@ button {
 }
 
 .bouton-de-retour > button:nth-child(1) {
-    margin-right: 0%;
-padding-left: 0%;
-margin-left: 0px;
+  margin-right: 0%;
+  padding-left: 0%;
+  margin-left: 0px;
 }
 
 .titre-h1 {
@@ -138,10 +137,10 @@ h1 {
 .coeur-violet-1 {
   display: none;
   margin-left: -27.5px;
-  animation: opacity-coeur 800ms 0ms linear both
+  animation: opacity-coeur 800ms 0ms linear both;
 }
 
-.activation-effet-1:hover .coeur-violet-1{
+.activation-effet-1:hover .coeur-violet-1 {
   display: inline;
 }
 
@@ -175,8 +174,8 @@ h3 {
 
 /*FRICASSEE D'ESCARGOT*/
 
-.bloc-des-entrees{
- animation: translation-bloc 2000ms 2500ms linear both;
+.bloc-des-entrees {
+  animation: translation-bloc 2000ms 2500ms linear both;
 }
 .div-fricassee-d-escargot {
   position: relative;
@@ -282,8 +281,9 @@ h3 {
   transform-origin: left;
 }
 /* SECTION PLAT */
-.section-plat{
- animation: translation-bloc 2000ms 3500ms linear both; }
+.section-plat {
+  animation: translation-bloc 2000ms 3500ms linear both;
+}
 
 /* FILET DE BOEUF AUX HERBES*/
 
@@ -392,7 +392,7 @@ h3 {
 
 /* DESSERT */
 
-.dessert{
+.dessert {
   animation: translation-bloc 2000ms 4500ms linear both;
 }
 

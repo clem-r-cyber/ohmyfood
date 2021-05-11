@@ -87,14 +87,13 @@ header {
 
 .logo-chaine {
   display: block;
-width: 90%;
-margin-bottom: 10px;
-margin-top: 10px;
-margin-left: 15px;
+  width: 90%;
+  margin-bottom: 10px;
+  margin-top: 10px;
+  margin-left: 15px;
 }
 
 .fleche-retour {
-
   cursor: pointer;
 }
 
@@ -109,8 +108,8 @@ button {
 
 .bouton-de-retour > button:nth-child(1) {
   margin-right: 0%;
-padding-left: 0%;
-margin-left: 0px;
+  padding-left: 0%;
+  margin-left: 0px;
 }
 
 .titre-h1 {
@@ -141,6 +140,12 @@ h1 {
   background: coral;
 }
 
+.coeur-violet-1 {
+  display: none;
+  margin-left: -27.5px;
+  animation: opacity-coeur 800ms 0ms linear both;
+}
+
 h3 {
   font-size: 15px;
   width: 60px;
@@ -165,8 +170,8 @@ h3 {
 
 /* RAVIOLES DE FOIE GRAS*/
 
-.bloc-des-entrees{
- animation: translation-bloc 2000ms 2500ms linear both;
+.bloc-des-entrees {
+  animation: translation-bloc 2000ms 2500ms linear both;
 }
 .div-ravioles-de-foie-gras {
   position: relative;
@@ -310,8 +315,8 @@ h3 {
 
 /* SECTION PLAT */
 
-.section-plat{
- animation: translation-bloc 2000ms 3500ms linear both; 
+.section-plat {
+  animation: translation-bloc 2000ms 3500ms linear both;
 }
 
 /* NOIX DE COQUILLE SAINT JACQUES*/
@@ -424,7 +429,7 @@ h3 {
 
 /* DESSERT */
 
-.dessert{
+.dessert {
   animation: translation-bloc 2000ms 4500ms linear both;
 }
 
