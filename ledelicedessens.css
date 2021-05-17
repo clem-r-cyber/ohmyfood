@@ -1,3 +1,10 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v7.0.29,
+* Autoprefixer: v9.7.6
+* Browsers: last 4 version
+*/
+
 html {
   margin-top: -8px;
   margin-left: -8px;
@@ -5,9 +12,11 @@ html {
 
 /*header*/
 * {
-  flex-wrap: nowrap;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
   padding: 0;
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI',
     Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans',
     'Helvetica Neue', sans-serif;
@@ -69,19 +78,28 @@ header {
   width: 100%;
   max-width: 845px;
   margin: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
-  justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   position: relative;
 }
 
 .photo-plat-restaurant-4 {
   height: 100%;
   width: 100%;
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 .bouton-de-retour {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
 }
 
@@ -115,16 +133,26 @@ button {
 .titre-h1 {
   height: 50px;
   width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
-  justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 h1 {
   height: 100%;
   width: 80%;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 h1 {
@@ -143,7 +171,8 @@ h1 {
 .coeur-violet-1 {
   display: none;
   margin-left: -27.5px;
-  animation: opacity-coeur 800ms 0ms linear both;
+  -webkit-animation: opacity-coeur 800ms 0ms linear both;
+          animation: opacity-coeur 800ms 0ms linear both;
 }
 
 h3 {
@@ -154,13 +183,19 @@ h3 {
 }
 
 #ensemble-du-menu {
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   width: 100%;
   max-width: 800px;
   margin: -210px auto;
   padding: 15px 15px 0% 15px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   position: relative;
   top: 150px;
   background-color: #e5e5e5;
@@ -170,7 +205,8 @@ h3 {
 /*TARTARE DE THON */
 
 .bloc-des-entrees {
-  animation: translation-bloc 2000ms 2500ms linear both;
+  -webkit-animation: translation-bloc 2000ms 2500ms linear both;
+          animation: translation-bloc 2000ms 2500ms linear both;
 }
 
 .div-tartare-de-thon {
@@ -178,23 +214,36 @@ h3 {
   height: 80px;
   width: 100%;
   margin-top: 15px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   background-color: #fff;
   border-radius: 15px;
 }
 .div-tartare-de-thon:hover .bouton-validation {
   opacity: 1;
-  transform: scaleX(1.2);
-  transition-duration: 400ms;
-  transform-origin: right;
-  animation-name: derouler;
-  animation: 300ms 0ms linear ease-out;
+  -webkit-transform: scaleX(1.2);
+      -ms-transform: scaleX(1.2);
+          transform: scaleX(1.2);
+  -webkit-transition-duration: 400ms;
+       -o-transition-duration: 400ms;
+          transition-duration: 400ms;
+  -webkit-transform-origin: right;
+      -ms-transform-origin: right;
+          transform-origin: right;
+  -webkit-animation-name: derouler;
+          animation-name: derouler;
+  -webkit-animation: 300ms 0ms linear ease-out;
+          animation: 300ms 0ms linear ease-out;
   cursor: pointer;
 }
 
 .div-tartare-de-thon:hover .p-titre-prix {
-  animation: translation 400ms 0ms linear both;
+  -webkit-animation: translation 400ms 0ms linear both;
+          animation: translation 400ms 0ms linear both;
   padding-left: 0%;
   padding-right: 21%;
 }
@@ -202,8 +251,11 @@ h3 {
 .tartare-de-thon {
   width: 70%;
   padding: 0px 1%;
-  transform-origin: left;
-  flex-wrap: nowrap;
+  -webkit-transform-origin: left;
+      -ms-transform-origin: left;
+          transform-origin: left;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
 }
 
 /* BOUCHEE D'HOMARD CROUSTILLANT*/
@@ -213,8 +265,12 @@ h3 {
   height: 80px;
   width: 100%;
   margin-top: 15px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   background-color: #fff;
   border-radius: 15px;
 }
@@ -222,15 +278,22 @@ h3 {
 .div-bouchee-d-homard-croustillant:hover
   .bouton-validation {
   opacity: 1;
-  transform: scaleX(1.2);
-  transform-origin: right;
-  animation-name: derouler;
-  animation: 400ms 0ms linear ease-out;
+  -webkit-transform: scaleX(1.2);
+      -ms-transform: scaleX(1.2);
+          transform: scaleX(1.2);
+  -webkit-transform-origin: right;
+      -ms-transform-origin: right;
+          transform-origin: right;
+  -webkit-animation-name: derouler;
+          animation-name: derouler;
+  -webkit-animation: 400ms 0ms linear ease-out;
+          animation: 400ms 0ms linear ease-out;
   cursor: pointer;
 }
 
 .div-bouchee-d-homard-croustillant:hover .p-titre-prix {
-  animation: translation 300ms 0ms linear both;
+  -webkit-animation: translation 300ms 0ms linear both;
+          animation: translation 300ms 0ms linear both;
   padding-left: 0%;
   padding-right: 21%;
 }
@@ -238,8 +301,11 @@ h3 {
 .bouchee-d-homard-croustillant {
   width: 70%;
   padding: 0px 1%;
-  transform-origin: left;
-  flex-wrap: nowrap;
+  -webkit-transform-origin: left;
+      -ms-transform-origin: left;
+          transform-origin: left;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
 }
 
 /* VELOUTE DE CEPES*/
@@ -249,37 +315,54 @@ h3 {
   height: 80px;
   width: 100%;
   margin-top: 15px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   background-color: #fff;
   border-radius: 15px;
 }
 
 .div-veloute-de-cepes:hover .bouton-validation {
   opacity: 1;
-  transform: scaleX(1.2);
-  transition-duration: 400ms;
-  transform-origin: right;
-  animation-name: derouler;
-  animation: 300ms 0ms linear ease-out;
+  -webkit-transform: scaleX(1.2);
+      -ms-transform: scaleX(1.2);
+          transform: scaleX(1.2);
+  -webkit-transition-duration: 400ms;
+       -o-transition-duration: 400ms;
+          transition-duration: 400ms;
+  -webkit-transform-origin: right;
+      -ms-transform-origin: right;
+          transform-origin: right;
+  -webkit-animation-name: derouler;
+          animation-name: derouler;
+  -webkit-animation: 300ms 0ms linear ease-out;
+          animation: 300ms 0ms linear ease-out;
   cursor: pointer;
 }
 
 .div-veloute-de-cepes:hover .p-titre-prix {
-  animation: translation 400ms 0ms linear both;
+  -webkit-animation: translation 400ms 0ms linear both;
+          animation: translation 400ms 0ms linear both;
   padding-left: 0%;
   padding-right: 21%;
 }
 
 .veloute-de-cepes {
-  flex-wrap: nowrap;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
   width: 70%;
   padding: 0px 1%;
-  transform-origin: left;
+  -webkit-transform-origin: left;
+      -ms-transform-origin: left;
+          transform-origin: left;
 }
 /* SECTION PLAT */
 .section-plat {
-  animation: translation-bloc 2000ms 3500ms linear both;
+  -webkit-animation: translation-bloc 2000ms 3500ms linear both;
+          animation: translation-bloc 2000ms 3500ms linear both;
 }
 
 /* POULET ROTIE AUX HERBES DE PROVENCE*/
@@ -289,8 +372,12 @@ h3 {
   height: 80px;
   width: 100%;
   margin-top: 15px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   background-color: #fff;
   border-radius: 15px;
 }
@@ -298,25 +385,37 @@ h3 {
 .div-poulet-roti-aux-herbes-de-provence:hover
   .bouton-validation {
   opacity: 1;
-  transform: scaleX(1.2);
-  transition-duration: 400ms;
-  transform-origin: right;
-  animation-name: derouler;
-  animation: 300ms 0ms linear ease-out;
+  -webkit-transform: scaleX(1.2);
+      -ms-transform: scaleX(1.2);
+          transform: scaleX(1.2);
+  -webkit-transition-duration: 400ms;
+       -o-transition-duration: 400ms;
+          transition-duration: 400ms;
+  -webkit-transform-origin: right;
+      -ms-transform-origin: right;
+          transform-origin: right;
+  -webkit-animation-name: derouler;
+          animation-name: derouler;
+  -webkit-animation: 300ms 0ms linear ease-out;
+          animation: 300ms 0ms linear ease-out;
   cursor: pointer;
 }
 .div-poulet-roti-aux-herbes-de-provence:hover
   .p-titre-prix {
-  animation: translation 400ms 0ms linear both;
+  -webkit-animation: translation 400ms 0ms linear both;
+          animation: translation 400ms 0ms linear both;
   padding-left: 0%;
   padding-right: 21%;
 }
 
 .poulet-roti-aux-herbes-de-provence {
-  flex-wrap: nowrap;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
   width: 70%;
   padding: 0px 1%;
-  transform-origin: left;
+  -webkit-transform-origin: left;
+      -ms-transform-origin: left;
+          transform-origin: left;
 }
 
 /* LANGOUSTINE ROTIE*/
@@ -326,32 +425,47 @@ h3 {
   height: 80px;
   width: 100%;
   margin-top: 15px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   background-color: #fff;
   border-radius: 15px;
 }
 
 .div-langoustine-rotie:hover .bouton-validation {
   opacity: 1;
-  transform: scaleX(1.2);
-  transition-duration: 400ms;
-  transform-origin: right;
-  animation: 300ms 0ms linear ease-out;
+  -webkit-transform: scaleX(1.2);
+      -ms-transform: scaleX(1.2);
+          transform: scaleX(1.2);
+  -webkit-transition-duration: 400ms;
+       -o-transition-duration: 400ms;
+          transition-duration: 400ms;
+  -webkit-transform-origin: right;
+      -ms-transform-origin: right;
+          transform-origin: right;
+  -webkit-animation: 300ms 0ms linear ease-out;
+          animation: 300ms 0ms linear ease-out;
   cursor: pointer;
 }
 
 .div-langoustine-rotie:hover .p-titre-prix {
-  animation: translation 400ms 0ms linear both;
+  -webkit-animation: translation 400ms 0ms linear both;
+          animation: translation 400ms 0ms linear both;
   padding-left: 0%;
   padding-right: 21%;
 }
 
 .langoustine-rotie {
-  flex-wrap: nowrap;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
   width: 70%;
   padding: 0px 1%;
-  transform-origin: left;
+  -webkit-transform-origin: left;
+      -ms-transform-origin: left;
+          transform-origin: left;
 }
 
 /* COTES DE BOEUF ANGUS */
@@ -361,37 +475,56 @@ h3 {
   height: 80px;
   width: 100%;
   margin-top: 15px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: row;
-  align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   background-color: #fff;
   border-radius: 15px;
 }
 
 .div-cote-de-boeuf-angus:hover .bouton-validation {
   opacity: 1;
-  transform: scaleX(1.2);
-  transition-duration: 400ms;
-  transform-origin: right;
-  animation: 300ms 0ms linear ease-out;
+  -webkit-transform: scaleX(1.2);
+      -ms-transform: scaleX(1.2);
+          transform: scaleX(1.2);
+  -webkit-transition-duration: 400ms;
+       -o-transition-duration: 400ms;
+          transition-duration: 400ms;
+  -webkit-transform-origin: right;
+      -ms-transform-origin: right;
+          transform-origin: right;
+  -webkit-animation: 300ms 0ms linear ease-out;
+          animation: 300ms 0ms linear ease-out;
   cursor: pointer;
 }
 .div-cote-de-boeuf-angus:hover .p-titre-prix {
-  animation: translation 400ms 0ms linear both;
+  -webkit-animation: translation 400ms 0ms linear both;
+          animation: translation 400ms 0ms linear both;
   padding-left: 0%;
   padding-right: 21%;
 }
 
 .cote-de-boeuf-angus {
-  flex-wrap: nowrap;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
   width: 70%;
   padding: 0px 1%;
-  transform-origin: left;
+  -webkit-transform-origin: left;
+      -ms-transform-origin: left;
+          transform-origin: left;
 }
 
 /* DESSERT */
 .dessert {
-  animation: translation-bloc 2000ms 4500ms linear both;
+  -webkit-animation: translation-bloc 2000ms 4500ms linear both;
+          animation: translation-bloc 2000ms 4500ms linear both;
 }
 
 /* FARANDOLE DE DESSERTS */
@@ -401,34 +534,53 @@ h3 {
   height: 80px;
   width: 100%;
   margin-top: 15px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: row;
-  align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   background-color: #fff;
   border-radius: 15px;
 }
 
 .div-farandole-de-desserts:hover .bouton-validation {
   opacity: 1;
-  transform: scaleX(1.2);
-  transition-duration: 400ms;
-  transform-origin: right;
-  animation-name: derouler;
-  animation: 300ms 0ms linear ease-out;
+  -webkit-transform: scaleX(1.2);
+      -ms-transform: scaleX(1.2);
+          transform: scaleX(1.2);
+  -webkit-transition-duration: 400ms;
+       -o-transition-duration: 400ms;
+          transition-duration: 400ms;
+  -webkit-transform-origin: right;
+      -ms-transform-origin: right;
+          transform-origin: right;
+  -webkit-animation-name: derouler;
+          animation-name: derouler;
+  -webkit-animation: 300ms 0ms linear ease-out;
+          animation: 300ms 0ms linear ease-out;
   cursor: pointer;
 }
 
 .div-farandole-de-desserts:hover .p-titre-prix {
-  animation: translation 400ms 0ms linear both;
+  -webkit-animation: translation 400ms 0ms linear both;
+          animation: translation 400ms 0ms linear both;
   padding-left: 0%;
   padding-right: 21%;
 }
 
 .farandole-de-desserts {
-  flex-wrap: nowrap;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
   width: 70%;
   padding: 0px 1%;
-  transform-origin: left;
+  -webkit-transform-origin: left;
+      -ms-transform-origin: left;
+          transform-origin: left;
 }
 
 /* CREME BRULEE*/
@@ -438,33 +590,52 @@ h3 {
   height: 80px;
   width: 100%;
   margin-top: 15px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: row;
-  align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   background-color: #fff;
   border-radius: 15px;
 }
 
 .div-creme-brulee:hover .bouton-validation {
   opacity: 1;
-  transform: scaleX(1.2);
-  transition-duration: 400ms;
-  transform-origin: right;
-  animation-name: derouler;
-  animation: 300ms 0ms linear ease-out;
+  -webkit-transform: scaleX(1.2);
+      -ms-transform: scaleX(1.2);
+          transform: scaleX(1.2);
+  -webkit-transition-duration: 400ms;
+       -o-transition-duration: 400ms;
+          transition-duration: 400ms;
+  -webkit-transform-origin: right;
+      -ms-transform-origin: right;
+          transform-origin: right;
+  -webkit-animation-name: derouler;
+          animation-name: derouler;
+  -webkit-animation: 300ms 0ms linear ease-out;
+          animation: 300ms 0ms linear ease-out;
   cursor: pointer;
 }
 .div-creme-brulee:hover .p-titre-prix {
-  animation: translation 400ms 0ms linear both;
+  -webkit-animation: translation 400ms 0ms linear both;
+          animation: translation 400ms 0ms linear both;
   padding-left: 0%;
   padding-right: 21%;
 }
 
 .creme-brulee {
-  flex-wrap: nowrap;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
   width: 70%;
   padding: 0px 1%;
-  transform-origin: left;
+  -webkit-transform-origin: left;
+      -ms-transform-origin: left;
+          transform-origin: left;
 }
 
 /* TIRAMISU */
@@ -474,39 +645,59 @@ h3 {
   height: 80px;
   width: 100%;
   margin-top: 15px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: row;
-  align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   background-color: #fff;
   border-radius: 15px;
 }
 
 .div-tiramisu:hover .bouton-validation {
   opacity: 1;
-  transform: scaleX(1.2);
-  transition-duration: 400ms;
-  transform-origin: right;
-  animation-name: derouler;
-  animation: 300ms 0ms linear ease-out;
+  -webkit-transform: scaleX(1.2);
+      -ms-transform: scaleX(1.2);
+          transform: scaleX(1.2);
+  -webkit-transition-duration: 400ms;
+       -o-transition-duration: 400ms;
+          transition-duration: 400ms;
+  -webkit-transform-origin: right;
+      -ms-transform-origin: right;
+          transform-origin: right;
+  -webkit-animation-name: derouler;
+          animation-name: derouler;
+  -webkit-animation: 300ms 0ms linear ease-out;
+          animation: 300ms 0ms linear ease-out;
   cursor: pointer;
 }
 .div-tiramisu:hover .p-titre-prix {
-  animation: translation 400ms 0ms linear both;
+  -webkit-animation: translation 400ms 0ms linear both;
+          animation: translation 400ms 0ms linear both;
   padding-left: 0%;
   padding-right: 21%;
 }
 
 .tiramisu {
-  flex-wrap: nowrap;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
   width: 70%;
   padding: 0px 1%;
-  transform-origin: left;
+  -webkit-transform-origin: left;
+      -ms-transform-origin: left;
+          transform-origin: left;
 }
 
 /* bouton commander */
 
 .bouton-commander {
-  align-content: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI',
     Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans',
     'Helvetica Neue', sans-serif;
@@ -515,6 +706,11 @@ h3 {
 
 .commander {
   background: rgb(255, 121, 218);
+  background: -o-linear-gradient(
+    279deg,
+    rgba(255, 121, 218, 1) 0%,
+    rgba(147, 86, 220, 1) 100%
+  );
   background: linear-gradient(
     171deg,
     rgba(255, 121, 218, 1) 0%,
@@ -528,10 +724,13 @@ h3 {
   margin-right: auto;
   margin-bottom: 30px;
   margin-left: auto;
-  box-shadow: #354146 3px 2px 5px;
+  -webkit-box-shadow: #354146 3px 2px 5px;
+          box-shadow: #354146 3px 2px 5px;
 }
 .commander:hover {
-  transform: scale(1.05);
+  -webkit-transform: scale(1.05);
+      -ms-transform: scale(1.05);
+          transform: scale(1.05);
   cursor: pointer;
 }
 
@@ -563,8 +762,12 @@ h3 {
 }
 
 .bloc-footer-image-1 {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   margin-left: 3%;
 }
 
@@ -584,8 +787,12 @@ h3 {
 }
 
 .bloc-footer-image-2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   margin-left: 3%;
 }
 
@@ -623,5 +830,7 @@ h3 {
 
 footer {
   width: 100%;
-  align-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }

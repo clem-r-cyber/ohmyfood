@@ -1,11 +1,25 @@
 
 
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v7.0.29,
+* Autoprefixer: v9.7.6
+* Browsers: last 4 version
+*/
+
 @media screen and (min-width: 750px){
   .ensemble-nav {
     height:190px;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: row;
-    justify-content: center center;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: center center;
+        -ms-flex-pack: center center;
+            justify-content: center center;
   }
 
   .ensembles-div-restaurant {
@@ -65,18 +79,28 @@
     height: 540px;
     width: 100%;
     /* align-content: center; */
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
   }
 
   .bloc-restauration {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     height: 670px;
   }
 
   .div-article-restauration {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: wrap;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: wrap;
+            flex-direction: wrap;
   }
   /*FOOTER*/
 
@@ -90,8 +114,12 @@
   }
 
   .bloc-footer-image-1 {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    align-items: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     margin-left: 45%;
   }
 
@@ -111,8 +139,12 @@
   }
 
   .bloc-footer-image-2 {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    align-items: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     margin-left: 45%;
   }
 
@@ -150,42 +182,123 @@
 
   footer {
     width: 100%;
-    align-items: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
+
+@-webkit-keyframes derouler {
+  0% {
+    -webkit-transform: scaleX(0);
+            transform: scaleX(0);
+  }
+
+  100% {
+    -webkit-transform: scaleX(1.2);
+            transform: scaleX(1.2);
   }
 }
 
 @keyframes derouler {
   0% {
-    transform: scaleX(0);
+    -webkit-transform: scaleX(0);
+            transform: scaleX(0);
   }
 
   100% {
-    transform: scaleX(1.2);
+    -webkit-transform: scaleX(1.2);
+            transform: scaleX(1.2);
   }
 }
-@keyframes translation-bloc {
+@-webkit-keyframes translation-bloc {
   0% {
+    -webkit-transition: -webkit-transform scale(0ms);
+    transition: -webkit-transform scale(0ms);
+    -o-transition: transform scale(0ms);
     transition: transform scale(0ms);
+    transition: transform scale(0ms), -webkit-transform scale(0ms);
     opacity: 0;
   }
   50% {
+    -webkit-transition: -webkit-transform scale(1000ms);
+    transition: -webkit-transform scale(1000ms);
+    -o-transition: transform scale(1000ms);
     transition: transform scale(1000ms);
+    transition: transform scale(1000ms), -webkit-transform scale(1000ms);
     opacity: 0.5;
   }
 
   100% {
+    -webkit-transition: -webkit-transform scale(2000ms);
+    transition: -webkit-transform scale(2000ms);
+    -o-transition: transform scale(2000ms);
     transition: transform scale(2000ms);
+    transition: transform scale(2000ms), -webkit-transform scale(2000ms);
     opacity: 1;
+  }
+}
+@keyframes translation-bloc {
+  0% {
+    -webkit-transition: -webkit-transform scale(0ms);
+    transition: -webkit-transform scale(0ms);
+    -o-transition: transform scale(0ms);
+    transition: transform scale(0ms);
+    transition: transform scale(0ms), -webkit-transform scale(0ms);
+    opacity: 0;
+  }
+  50% {
+    -webkit-transition: -webkit-transform scale(1000ms);
+    transition: -webkit-transform scale(1000ms);
+    -o-transition: transform scale(1000ms);
+    transition: transform scale(1000ms);
+    transition: transform scale(1000ms), -webkit-transform scale(1000ms);
+    opacity: 0.5;
+  }
+
+  100% {
+    -webkit-transition: -webkit-transform scale(2000ms);
+    transition: -webkit-transform scale(2000ms);
+    -o-transition: transform scale(2000ms);
+    transition: transform scale(2000ms);
+    transition: transform scale(2000ms), -webkit-transform scale(2000ms);
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes opacity {
+  0%,
+  99% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  100% {
+    -webkit-transform: scale(0);
+            transform: scale(0);
   }
 }
 
 @keyframes opacity {
   0%,
   99% {
-    transform: scale(1);
+    -webkit-transform: scale(1);
+            transform: scale(1);
   }
   100% {
-    transform: scale(0);
+    -webkit-transform: scale(0);
+            transform: scale(0);
+  }
+}
+
+@-webkit-keyframes opacity-coeur {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0.5;
+  }
+  100% {
+    opacity: 1;
   }
 }
 
@@ -201,6 +314,15 @@
   }
 }
 
+@-webkit-keyframes translation {
+  0% {
+    translate: 0;
+  }
+  100% {
+    translate: -20%;
+  }
+}
+
 @keyframes translation {
   0% {
     translate: 0;
@@ -209,58 +331,86 @@
     translate: -20%;
   }
 }
-@keyframes spinner {
+@-webkit-keyframes spinner {
   0% {
-    transform: rotate(0deg);
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
   }
   100% {
-    transform: rotate(360deg);
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+@keyframes spinner {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
   }
 }
 
 /* GENERIQUE */
 * {
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 .bouton-validation {
   position: absolute;
   height: 80px;
   width: 20%;
   padding: 0px 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
-  justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   right: 0px;
   top: 0px;
-  transform-origin: right;
+  -webkit-transform-origin: right;
+      -ms-transform-origin: right;
+          transform-origin: right;
   color: #fff;
   background-color: #99e2d0;
   border-radius: 0px 14px 14px 0px;
   font-size: 18px;
   opacity: 0;
-  animation: derouler 2000ms 0ms linear both;
+  -webkit-animation: derouler 2000ms 0ms linear both;
+          animation: derouler 2000ms 0ms linear both;
 }
 
 .validation {
   height: 18px;
-  transform: rotate(360deg);
+  -webkit-transform: rotate(360deg);
+      -ms-transform: rotate(360deg);
+          transform: rotate(360deg);
 }
 
 h4 {
   display: block;
   font-size: 1.17em;
   font-weight: bold;
-  margin-block-start: 1em;
-  margin-block-end: 1em;
+  -webkit-margin-before: 1em;
+          margin-block-start: 1em;
+  -webkit-margin-after: 1em;
+          margin-block-end: 1em;
 }
 
 .section-entrees,
 h4.p-titre {
   font-size: 1em;
   overflow: hidden;
-  text-overflow: ellipsis;
+  -o-text-overflow: ellipsis;
+     text-overflow: ellipsis;
   white-space: nowrap;
-  flex-shrink: 0;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
   margin-top: 0px;
   margin-bottom: 0px;
   margin-left: 10px;
@@ -286,7 +436,8 @@ h5 {
   font-weight: 100;
   white-space: nowrap;
   overflow: hidden;
-  text-overflow: ellipsis;
+  -o-text-overflow: ellipsis;
+     text-overflow: ellipsis;
   margin-top: 0px;
   margin-bottom: 0px;
   margin-left: 10px;
@@ -295,13 +446,15 @@ h5 {
 .h5:hover {
   white-space: nowrap;
   overflow: hidden;
-  text-overflow: ellipsis;
+  -o-text-overflow: ellipsis;
+     text-overflow: ellipsis;
 }
 
 .coeur-violet-1 {
   display: none;
   /* margin-left: -27.5px; */
-  animation: opacity-coeur 800ms 0ms linear both;
+  -webkit-animation: opacity-coeur 800ms 0ms linear both;
+          animation: opacity-coeur 800ms 0ms linear both;
 }
 
 .activation-effet-1:hover .coeur-violet-1 {

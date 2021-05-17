@@ -1,3 +1,10 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v7.0.29,
+* Autoprefixer: v9.7.6
+* Browsers: last 4 version
+*/
+
 html {
   margin-top: -8px;
   margin-left: -8px;
@@ -29,7 +36,8 @@ body {
   width: 100%;
   height: 100%;
   background-color: rgba(255, 255, 255, 0.5);
-  animation: opacity 6000ms forwards;
+  -webkit-animation: opacity 6000ms forwards;
+          animation: opacity 6000ms forwards;
 }
 
 .spinner:not(:required):after {
@@ -42,7 +50,8 @@ body {
   border: 15px solid rgb(138, 0, 180);
   border-radius: 100%;
   border-bottom-color: transparent;
-  animation: spinner 1s linear 0s infinite;
+  -webkit-animation: spinner 1s linear 0s infinite;
+          animation: spinner 1s linear 0s infinite;
 }
 
 header {
@@ -50,8 +59,12 @@ header {
   width: 100%;
   max-width: 845px;
   margin: 0px auto;
-  align-items: center;
-  justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   position: relative;
 }
 
@@ -69,6 +82,8 @@ header {
 
 .maps-position {
   background: #d8d8d8d8;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
 }
 
@@ -81,12 +96,19 @@ header {
 .bloc-maps-logo {
   width: 100%;
   padding: 15px 0px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   justify-items: center;
-  justify-content: center;
-  align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   background-color: #e5e5e5;
-  box-shadow:inset 0px 0px 10px 1px rgb(126, 126, 126);
+  -webkit-box-shadow:inset 0px 0px 10px 1px rgb(126, 126, 126);
+          box-shadow:inset 0px 0px 10px 1px rgb(126, 126, 126);
 }
 
 .text-maps {
@@ -95,13 +117,17 @@ header {
     Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans',
     'Helvetica Neue', sans-serif;
   text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
 }
 
 .bloc-reserve-et-bouton {
   width: 100%;
   background: rgba(245, 245, 245, 0.801);
-  align-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   display: inline-block;
 }
 
@@ -114,7 +140,9 @@ header {
   margin-bottom: 10px;
   width: 100%;
   text-align: center;
-  align-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .p-h1 {
@@ -123,7 +151,9 @@ header {
     'Helvetica Neue', sans-serif;
   font-size: 18px;
   margin-bottom: 25px;
-  align-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   text-align: center;
 }
 
@@ -136,6 +166,11 @@ header {
 }
 button {
   background: rgb(255, 121, 218);
+  background: -o-linear-gradient(
+    279deg,
+    rgba(255, 121, 218, 1) 0%,
+    rgba(147, 86, 220, 1) 100%
+  );
   background: linear-gradient(
     171deg,
     rgba(255, 121, 218, 1) 0%,
@@ -147,7 +182,9 @@ button {
   width: 250px;
 }
 button:hover {
-  transform: scale(1.05);
+  -webkit-transform: scale(1.05);
+      -ms-transform: scale(1.05);
+          transform: scale(1.05);
 }
 
 .p-button-explorer {
@@ -159,9 +196,16 @@ button:hover {
 
 .ensemble-nav {
   width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   height: 350px;
   margin-top: 0px;
   padding-top: 0px;
@@ -182,9 +226,12 @@ button:hover {
   margin-top: 40px;
   margin-bottom: 10px;
   padding-top: 0px;
-  align-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   border-radius: 15px;
-  box-shadow: 3px 3px 8px 1px rgb(190, 190, 190);
+  -webkit-box-shadow: 3px 3px 8px 1px rgb(190, 190, 190);
+          box-shadow: 3px 3px 8px 1px rgb(190, 190, 190);
   width: 320px;
   height: 65px;
   background: rgba(245, 245, 245, 0.801);
@@ -192,7 +239,9 @@ button:hover {
 
 .menu-nav-phone:hover {
   background: #f7e0ff;
-  transform: scale(1.05);
+  -webkit-transform: scale(1.05);
+      -ms-transform: scale(1.05);
+          transform: scale(1.05);
 }
 
 .nav-phone {
@@ -200,8 +249,12 @@ button:hover {
   margin-left: 15px;
   font-size: 14px;
   text-align: center;
-  align-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   justify-items: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
 }
 
@@ -239,16 +292,21 @@ button:hover {
   margin-top: 40px;
   margin-bottom: 10px;
   padding-top: 0px;
-  align-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   border-radius: 15px;
-  box-shadow: 3px 3px 8px 1px rgb(190, 190, 190);
+  -webkit-box-shadow: 3px 3px 8px 1px rgb(190, 190, 190);
+          box-shadow: 3px 3px 8px 1px rgb(190, 190, 190);
   width: 320px;
   height: 65px;
   background: rgba(245, 245, 245, 0.801);
 }
 .menu-nav-deroule:hover {
   background: #f7e0ff;
-  transform: scale(1.05);
+  -webkit-transform: scale(1.05);
+      -ms-transform: scale(1.05);
+          transform: scale(1.05);
 }
 
 .nav-deroule {
@@ -256,7 +314,11 @@ button:hover {
   margin-left: 15px;
   font-size: 14px;
   text-align: center;
-  align-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
 }
 .numero-2 {
@@ -290,9 +352,12 @@ button:hover {
   margin-top: 40px;
   margin-bottom: 10px;
   padding-top: 0px;
-  align-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   border-radius: 15px;
-  box-shadow: 3px 3px 8px 1px rgb(190, 190, 190);
+  -webkit-box-shadow: 3px 3px 8px 1px rgb(190, 190, 190);
+          box-shadow: 3px 3px 8px 1px rgb(190, 190, 190);
   width: 320px;
   height: 65px;
   background: rgba(245, 245, 245, 0.801);
@@ -300,7 +365,9 @@ button:hover {
 
 .menu-nav-boutique:hover {
   background: #f7e0ff;
-  transform: scale(1.05);
+  -webkit-transform: scale(1.05);
+      -ms-transform: scale(1.05);
+          transform: scale(1.05);
 }
 
 .nav-boutique {
@@ -308,7 +375,11 @@ button:hover {
   margin-left: 15px;
   font-size: 14px;
   text-align: center;
-  align-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
 }
 .numero-3 {
@@ -346,20 +417,38 @@ button:hover {
   width: 100%;
   margin: 0px auto;
   padding: 15px 0px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: space-between;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 .bloc-restauration {
   width: 100%;
   margin: 0px auto;
   padding: 5px 0px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: space-between;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   background: rgba(245, 245, 245, 0.801);
 }
 
@@ -387,7 +476,9 @@ button:hover {
 }
 
 .div-la-palette-du-gout:hover {
-  transform: scale(1.02);
+  -webkit-transform: scale(1.02);
+      -ms-transform: scale(1.02);
+          transform: scale(1.02);
 }
 
 .bloc-icone-nouveau-1 {
@@ -422,6 +513,8 @@ button:hover {
   margin-top: -35px;
 }
 .bloc-p-la-palette-du-gout {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   margin-left: 10px;
   line-height: 20px;
@@ -443,7 +536,8 @@ button:hover {
 .coeur-violet-1 {
   display: none;
   margin-left: -22px;
-  animation: opacity-coeur 1000ms 0ms linear both;
+  -webkit-animation: opacity-coeur 1000ms 0ms linear both;
+          animation: opacity-coeur 1000ms 0ms linear both;
 }
 
 .activation-effet-1 {
@@ -466,7 +560,9 @@ button:hover {
 }
 
 .div-la-note-enchantee:hover {
-  transform: scale(1.02);
+  -webkit-transform: scale(1.02);
+      -ms-transform: scale(1.02);
+          transform: scale(1.02);
 }
 
 .icone-nouveau-2 {
@@ -498,6 +594,8 @@ button:hover {
 }
 
 .bloc-p-la-note-enchantee {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   margin-left: 10px;
   line-height: 20px;
@@ -519,7 +617,8 @@ button:hover {
 .coeur-violet-2 {
   margin-left: -21px;
   display: none;
-  animation: opacity-coeur 1000ms 0ms linear both;
+  -webkit-animation: opacity-coeur 1000ms 0ms linear both;
+          animation: opacity-coeur 1000ms 0ms linear both;
 }
 
 .activation-effet-2 {
@@ -542,7 +641,9 @@ button:hover {
 }
 
 .div-a-la-francaise:hover {
-  transform: scale(1.02);
+  -webkit-transform: scale(1.02);
+      -ms-transform: scale(1.02);
+          transform: scale(1.02);
 }
 
 .A-la-francaise {
@@ -553,6 +654,8 @@ button:hover {
   margin-top: -35px;
 }
 .bloc-p-a-la-francaise {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   margin-left: 10px;
   line-height: 20px;
@@ -572,7 +675,8 @@ button:hover {
 .coeur-violet-3 {
   margin-left: -21px;
   display: none;
-  animation: opacity-coeur 1000ms 0ms linear both;
+  -webkit-animation: opacity-coeur 1000ms 0ms linear both;
+          animation: opacity-coeur 1000ms 0ms linear both;
 }
 .activation-effet-3 {
   height: 39px;
@@ -593,7 +697,9 @@ button:hover {
 }
 
 .div-le-delice-des-sens:hover {
-  transform: scale(1.02);
+  -webkit-transform: scale(1.02);
+      -ms-transform: scale(1.02);
+          transform: scale(1.02);
 }
 
 .le-delice-des-sens {
@@ -605,6 +711,8 @@ button:hover {
 }
 
 .bloc-p-le-delice-des-sens {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   margin-left: 10px;
   line-height: 20px;
@@ -625,7 +733,8 @@ button:hover {
 .coeur-violet-4 {
   margin-left: -21px;
   display: none;
-  animation: opacity-coeur 1000ms 0ms linear both;
+  -webkit-animation: opacity-coeur 1000ms 0ms linear both;
+          animation: opacity-coeur 1000ms 0ms linear both;
 }
 
 .activation-effet-4 {
@@ -656,8 +765,12 @@ button:hover {
 }
 
 .bloc-footer-image-1 {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   margin-left: 15px;
 }
 
@@ -677,8 +790,12 @@ button:hover {
 }
 
 .bloc-footer-image-2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   margin-left: 15px;
 }
 

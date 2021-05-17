@@ -1,3 +1,10 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v7.0.29,
+* Autoprefixer: v9.7.6
+* Browsers: last 4 version
+*/
+
 html {
   margin-top: -8px;
   margin-left: -8px;
@@ -5,9 +12,11 @@ html {
 
 /*header*/
 * {
-  flex-wrap: nowrap;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
   padding: 0;
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI',
     Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans',
     'Helvetica Neue', sans-serif;
@@ -69,19 +78,28 @@ header {
   width: 100%;
   max-width: 845px;
   margin: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
-  justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   position: relative;
 }
 
 .photo-plat-restaurant-3 {
   height: 100%;
   width: 100%;
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 .bouton-de-retour {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
 }
 
@@ -115,16 +133,26 @@ button {
 .titre-h1 {
   height: 50px;
   width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
-  justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 h1 {
   height: 100%;
   width: 80%;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 h1 {
@@ -137,7 +165,8 @@ h1 {
 .coeur-violet-1 {
   display: none;
   margin-left: -27.5px;
-  animation: opacity-coeur 800ms 0ms linear both;
+  -webkit-animation: opacity-coeur 800ms 0ms linear both;
+          animation: opacity-coeur 800ms 0ms linear both;
 }
 
 .activation-effet-1:hover .coeur-violet-1 {
@@ -158,47 +187,68 @@ h3 {
 }
 
 #ensemble-du-menu {
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   width: 100%;
   max-width: 800px;
   margin: -210px auto;
   padding: 15px 15px 0% 15px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   position: relative;
   top: 150px;
   background-color: #e5e5e5;
   border-radius: 15px 15px 0px 0px;
-  animation: translation-bloc 200ms 1000ms linear both;
+  -webkit-animation: translation-bloc 200ms 1000ms linear both;
+          animation: translation-bloc 200ms 1000ms linear both;
 }
 
 /*FRICASSEE D'ESCARGOT*/
 
 .bloc-des-entrees {
-  animation: translation-bloc 2000ms 2500ms linear both;
+  -webkit-animation: translation-bloc 2000ms 2500ms linear both;
+          animation: translation-bloc 2000ms 2500ms linear both;
 }
 .div-fricassee-d-escargot {
   position: relative;
   height: 80px;
   width: 100%;
   margin-top: 15px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   background-color: #fff;
   border-radius: 15px;
 }
 .div-fricassee-d-escargot:hover .bouton-validation {
   opacity: 1;
-  transform: scaleX(1.2);
-  transition-duration: 400ms;
-  transform-origin: right;
-  animation-name: derouler;
-  animation: 300ms 0ms linear ease-out;
+  -webkit-transform: scaleX(1.2);
+      -ms-transform: scaleX(1.2);
+          transform: scaleX(1.2);
+  -webkit-transition-duration: 400ms;
+       -o-transition-duration: 400ms;
+          transition-duration: 400ms;
+  -webkit-transform-origin: right;
+      -ms-transform-origin: right;
+          transform-origin: right;
+  -webkit-animation-name: derouler;
+          animation-name: derouler;
+  -webkit-animation: 300ms 0ms linear ease-out;
+          animation: 300ms 0ms linear ease-out;
   cursor: pointer;
 }
 
 .div-fricassee-d-escargot:hover .p-titre-prix {
-  animation: translation 400ms 0ms linear both;
+  -webkit-animation: translation 400ms 0ms linear both;
+          animation: translation 400ms 0ms linear both;
   padding-left: 0%;
   padding-right: 21%;
 }
@@ -206,8 +256,11 @@ h3 {
 .fricassee-d-escargot {
   width: 70%;
   padding: 0px 1%;
-  transform-origin: left;
-  flex-wrap: nowrap;
+  -webkit-transform-origin: left;
+      -ms-transform-origin: left;
+          transform-origin: left;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
 }
 
 /* FOIE GRAS DE CANARD MI-CUIT*/
@@ -217,23 +270,34 @@ h3 {
   height: 80px;
   width: 100%;
   margin-top: 15px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   background-color: #fff;
   border-radius: 15px;
 }
 
 .div-Foie-gras-de-canard-mi-cuit:hover .bouton-validation {
   opacity: 1;
-  transform: scaleX(1.2);
-  transform-origin: right;
-  animation-name: derouler;
-  animation: 400ms 0ms linear ease-out;
+  -webkit-transform: scaleX(1.2);
+      -ms-transform: scaleX(1.2);
+          transform: scaleX(1.2);
+  -webkit-transform-origin: right;
+      -ms-transform-origin: right;
+          transform-origin: right;
+  -webkit-animation-name: derouler;
+          animation-name: derouler;
+  -webkit-animation: 400ms 0ms linear ease-out;
+          animation: 400ms 0ms linear ease-out;
   cursor: pointer;
 }
 
 .div-Foie-gras-de-canard-mi-cuit:hover .p-titre-prix {
-  animation: translation 300ms 0ms linear both;
+  -webkit-animation: translation 300ms 0ms linear both;
+          animation: translation 300ms 0ms linear both;
   padding-left: 0%;
   padding-right: 21%;
 }
@@ -241,8 +305,11 @@ h3 {
 .Foie-gras-de-canard-mi-cuit {
   width: 70%;
   padding: 0px 1%;
-  transform-origin: left;
-  flex-wrap: nowrap;
+  -webkit-transform-origin: left;
+      -ms-transform-origin: left;
+          transform-origin: left;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
 }
 
 /* OEUF AU PLAT*/
@@ -252,37 +319,54 @@ h3 {
   height: 80px;
   width: 100%;
   margin-top: 15px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   background-color: #fff;
   border-radius: 15px;
 }
 
 .div-oeuf-au-plat:hover .bouton-validation {
   opacity: 1;
-  transform: scaleX(1.2);
-  transition-duration: 400ms;
-  transform-origin: right;
-  animation-name: derouler;
-  animation: 300ms 0ms linear ease-out;
+  -webkit-transform: scaleX(1.2);
+      -ms-transform: scaleX(1.2);
+          transform: scaleX(1.2);
+  -webkit-transition-duration: 400ms;
+       -o-transition-duration: 400ms;
+          transition-duration: 400ms;
+  -webkit-transform-origin: right;
+      -ms-transform-origin: right;
+          transform-origin: right;
+  -webkit-animation-name: derouler;
+          animation-name: derouler;
+  -webkit-animation: 300ms 0ms linear ease-out;
+          animation: 300ms 0ms linear ease-out;
   cursor: pointer;
 }
 
 .div-oeuf-au-plat:hover .p-titre-prix {
-  animation: translation 400ms 0ms linear both;
+  -webkit-animation: translation 400ms 0ms linear both;
+          animation: translation 400ms 0ms linear both;
   padding-left: 0%;
   padding-right: 21%;
 }
 
 .oeuf-au-plat {
-  flex-wrap: nowrap;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
   width: 70%;
   padding: 0px 1%;
-  transform-origin: left;
+  -webkit-transform-origin: left;
+      -ms-transform-origin: left;
+          transform-origin: left;
 }
 /* SECTION PLAT */
 .section-plat {
-  animation: translation-bloc 2000ms 3500ms linear both;
+  -webkit-animation: translation-bloc 2000ms 3500ms linear both;
+          animation: translation-bloc 2000ms 3500ms linear both;
 }
 
 /* FILET DE BOEUF AUX HERBES*/
@@ -292,32 +376,48 @@ h3 {
   height: 80px;
   width: 100%;
   margin-top: 15px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   background-color: #fff;
   border-radius: 15px;
 }
 
 .div-filet-de-boeuf-aux-herbes:hover .bouton-validation {
   opacity: 1;
-  transform: scaleX(1.2);
-  transition-duration: 400ms;
-  transform-origin: right;
-  animation-name: derouler;
-  animation: 300ms 0ms linear ease-out;
+  -webkit-transform: scaleX(1.2);
+      -ms-transform: scaleX(1.2);
+          transform: scaleX(1.2);
+  -webkit-transition-duration: 400ms;
+       -o-transition-duration: 400ms;
+          transition-duration: 400ms;
+  -webkit-transform-origin: right;
+      -ms-transform-origin: right;
+          transform-origin: right;
+  -webkit-animation-name: derouler;
+          animation-name: derouler;
+  -webkit-animation: 300ms 0ms linear ease-out;
+          animation: 300ms 0ms linear ease-out;
   cursor: pointer;
 }
 .div-filet-de-boeuf-aux-herbes:hover .p-titre-prix {
-  animation: translation 400ms 0ms linear both;
+  -webkit-animation: translation 400ms 0ms linear both;
+          animation: translation 400ms 0ms linear both;
   padding-left: 0%;
   padding-right: 21%;
 }
 
 .filet-de-boeuf-aux-herbes {
-  flex-wrap: nowrap;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
   width: 70%;
   padding: 0px 1%;
-  transform-origin: left;
+  -webkit-transform-origin: left;
+      -ms-transform-origin: left;
+          transform-origin: left;
 }
 
 /* PARMENTIER DE QUEUE DE BOEUF*/
@@ -327,32 +427,47 @@ h3 {
   height: 80px;
   width: 100%;
   margin-top: 15px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   background-color: #fff;
   border-radius: 15px;
 }
 
 .div-parmentier-de-queue-de-boeuf:hover .bouton-validation {
   opacity: 1;
-  transform: scaleX(1.2);
-  transition-duration: 400ms;
-  transform-origin: right;
-  animation: 300ms 0ms linear ease-out;
+  -webkit-transform: scaleX(1.2);
+      -ms-transform: scaleX(1.2);
+          transform: scaleX(1.2);
+  -webkit-transition-duration: 400ms;
+       -o-transition-duration: 400ms;
+          transition-duration: 400ms;
+  -webkit-transform-origin: right;
+      -ms-transform-origin: right;
+          transform-origin: right;
+  -webkit-animation: 300ms 0ms linear ease-out;
+          animation: 300ms 0ms linear ease-out;
   cursor: pointer;
 }
 
 .div-parmentier-de-queue-de-boeuf:hover .p-titre-prix {
-  animation: translation 400ms 0ms linear both;
+  -webkit-animation: translation 400ms 0ms linear both;
+          animation: translation 400ms 0ms linear both;
   padding-left: 0%;
   padding-right: 21%;
 }
 
 .parmentier-de-queue-de-boeuf {
-  flex-wrap: nowrap;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
   width: 70%;
   padding: 0px 1%;
-  transform-origin: left;
+  -webkit-transform-origin: left;
+      -ms-transform-origin: left;
+          transform-origin: left;
 }
 
 /* FILET DE TURBOT */
@@ -362,38 +477,57 @@ h3 {
   height: 80px;
   width: 100%;
   margin-top: 15px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: row;
-  align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   background-color: #fff;
   border-radius: 15px;
 }
 
 .div-filet-de-turbot:hover .bouton-validation {
   opacity: 1;
-  transform: scaleX(1.2);
-  transition-duration: 400ms;
-  transform-origin: right;
-  animation: 300ms 0ms linear ease-out;
+  -webkit-transform: scaleX(1.2);
+      -ms-transform: scaleX(1.2);
+          transform: scaleX(1.2);
+  -webkit-transition-duration: 400ms;
+       -o-transition-duration: 400ms;
+          transition-duration: 400ms;
+  -webkit-transform-origin: right;
+      -ms-transform-origin: right;
+          transform-origin: right;
+  -webkit-animation: 300ms 0ms linear ease-out;
+          animation: 300ms 0ms linear ease-out;
   cursor: pointer;
 }
 .div-filet-de-turbot:hover .p-titre-prix {
-  animation: translation 400ms 0ms linear both;
+  -webkit-animation: translation 400ms 0ms linear both;
+          animation: translation 400ms 0ms linear both;
   padding-left: 0%;
   padding-right: 21%;
 }
 
 .filet-de-turbot {
-  flex-wrap: nowrap;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
   width: 70%;
   padding: 0px 1%;
-  transform-origin: left;
+  -webkit-transform-origin: left;
+      -ms-transform-origin: left;
+          transform-origin: left;
 }
 
 /* DESSERT */
 
 .dessert {
-  animation: translation-bloc 2000ms 4500ms linear both;
+  -webkit-animation: translation-bloc 2000ms 4500ms linear both;
+          animation: translation-bloc 2000ms 4500ms linear both;
 }
 
 /* PARIS-BREST */
@@ -403,34 +537,53 @@ h3 {
   height: 80px;
   width: 100%;
   margin-top: 15px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: row;
-  align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   background-color: #fff;
   border-radius: 15px;
 }
 
 .div-paris-brest:hover .bouton-validation {
   opacity: 1;
-  transform: scaleX(1.2);
-  transition-duration: 400ms;
-  transform-origin: right;
-  animation-name: derouler;
-  animation: 300ms 0ms linear ease-out;
+  -webkit-transform: scaleX(1.2);
+      -ms-transform: scaleX(1.2);
+          transform: scaleX(1.2);
+  -webkit-transition-duration: 400ms;
+       -o-transition-duration: 400ms;
+          transition-duration: 400ms;
+  -webkit-transform-origin: right;
+      -ms-transform-origin: right;
+          transform-origin: right;
+  -webkit-animation-name: derouler;
+          animation-name: derouler;
+  -webkit-animation: 300ms 0ms linear ease-out;
+          animation: 300ms 0ms linear ease-out;
   cursor: pointer;
 }
 
 .div-paris-brest:hover .p-titre-prix {
-  animation: translation 400ms 0ms linear both;
+  -webkit-animation: translation 400ms 0ms linear both;
+          animation: translation 400ms 0ms linear both;
   padding-left: 0%;
   padding-right: 21%;
 }
 
 .paris-brest {
-  flex-wrap: nowrap;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
   width: 70%;
   padding: 0px 1%;
-  transform-origin: left;
+  -webkit-transform-origin: left;
+      -ms-transform-origin: left;
+          transform-origin: left;
 }
 
 /* MACARON au chocolat d'exeption*/
@@ -440,9 +593,16 @@ h3 {
   height: 80px;
   width: 100%;
   margin-top: 15px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: row;
-  align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   background-color: #fff;
   border-radius: 15px;
 }
@@ -450,24 +610,36 @@ h3 {
 .div-macaron-au-chocolat-d-exeption:hover
   .bouton-validation {
   opacity: 1;
-  transform: scaleX(1.2);
-  transition-duration: 400ms;
-  transform-origin: right;
-  animation-name: derouler;
-  animation: 300ms 0ms linear ease-out;
+  -webkit-transform: scaleX(1.2);
+      -ms-transform: scaleX(1.2);
+          transform: scaleX(1.2);
+  -webkit-transition-duration: 400ms;
+       -o-transition-duration: 400ms;
+          transition-duration: 400ms;
+  -webkit-transform-origin: right;
+      -ms-transform-origin: right;
+          transform-origin: right;
+  -webkit-animation-name: derouler;
+          animation-name: derouler;
+  -webkit-animation: 300ms 0ms linear ease-out;
+          animation: 300ms 0ms linear ease-out;
   cursor: pointer;
 }
 .div-macaron-au-chocolat-d-exeption:hover .p-titre-prix {
-  animation: translation 400ms 0ms linear both;
+  -webkit-animation: translation 400ms 0ms linear both;
+          animation: translation 400ms 0ms linear both;
   padding-left: 0%;
   padding-right: 21%;
 }
 
 .macaron-au-chocolat-d-exeption {
-  flex-wrap: nowrap;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
   width: 70%;
   padding: 0px 1%;
-  transform-origin: left;
+  -webkit-transform-origin: left;
+      -ms-transform-origin: left;
+          transform-origin: left;
 }
 
 /* MOUSSE AU CHOCOLAT */
@@ -477,39 +649,59 @@ h3 {
   height: 80px;
   width: 100%;
   margin-top: 15px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: row;
-  align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   background-color: #fff;
   border-radius: 15px;
 }
 
 .div-mousse-au-chocolat:hover .bouton-validation {
   opacity: 1;
-  transform: scaleX(1.2);
-  transition-duration: 400ms;
-  transform-origin: right;
-  animation-name: derouler;
-  animation: 300ms 0ms linear ease-out;
+  -webkit-transform: scaleX(1.2);
+      -ms-transform: scaleX(1.2);
+          transform: scaleX(1.2);
+  -webkit-transition-duration: 400ms;
+       -o-transition-duration: 400ms;
+          transition-duration: 400ms;
+  -webkit-transform-origin: right;
+      -ms-transform-origin: right;
+          transform-origin: right;
+  -webkit-animation-name: derouler;
+          animation-name: derouler;
+  -webkit-animation: 300ms 0ms linear ease-out;
+          animation: 300ms 0ms linear ease-out;
   cursor: pointer;
 }
 .div-mousse-au-chocolat:hover .p-titre-prix {
-  animation: translation 400ms 0ms linear both;
+  -webkit-animation: translation 400ms 0ms linear both;
+          animation: translation 400ms 0ms linear both;
   padding-left: 0%;
   padding-right: 21%;
 }
 
 .mousse-au-chocolat {
-  flex-wrap: nowrap;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
   width: 70%;
   padding: 0px 1%;
-  transform-origin: left;
+  -webkit-transform-origin: left;
+      -ms-transform-origin: left;
+          transform-origin: left;
 }
 
 /* bouton commander */
 
 .bouton-commander {
-  align-content: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI',
     Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans',
     'Helvetica Neue', sans-serif;
@@ -518,6 +710,11 @@ h3 {
 
 .commander {
   background: rgb(255, 121, 218);
+  background: -o-linear-gradient(
+    279deg,
+    rgba(255, 121, 218, 1) 0%,
+    rgba(147, 86, 220, 1) 100%
+  );
   background: linear-gradient(
     171deg,
     rgba(255, 121, 218, 1) 0%,
@@ -531,10 +728,13 @@ h3 {
   margin-right: auto;
   margin-bottom: 30px;
   margin-left: auto;
-  box-shadow: #354146 3px 2px 5px;
+  -webkit-box-shadow: #354146 3px 2px 5px;
+          box-shadow: #354146 3px 2px 5px;
 }
 .commander:hover {
-  transform: scale(1.05);
+  -webkit-transform: scale(1.05);
+      -ms-transform: scale(1.05);
+          transform: scale(1.05);
   cursor: pointer;
 }
 
@@ -566,8 +766,12 @@ h3 {
 }
 
 .bloc-footer-image-1 {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   margin-left: 3%;
 }
 
@@ -587,8 +791,12 @@ h3 {
 }
 
 .bloc-footer-image-2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   margin-left: 3%;
 }
 
@@ -626,5 +834,7 @@ h3 {
 
 footer {
   width: 100%;
-  align-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
